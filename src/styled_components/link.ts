@@ -38,7 +38,7 @@ export const LinkStyles = {
       }
     }),
     phone_click: (props: Dict<unknown> | StyleFunctionProps): unknown => ({
-      fontSize: [16, 22, 33, 33, 33, 38],
+      fontSize: [20, 25, 20, 33, 33, 38],
       fontFamily: "Ultra",
       color: mode(whiten("gray.700", 20), darken("white", 20))(props),
       _hover: {

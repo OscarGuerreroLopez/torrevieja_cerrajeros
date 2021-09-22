@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 import { BusinessTitle, Telephone, TelephoneClick } from "../../constants";
+import { Phone } from "../phone";
 
 export const CardCall = (): JSX.Element => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -42,9 +43,7 @@ export const CardCall = (): JSX.Element => {
               <Image src="/phone.svg" alt={BusinessTitle} />
             </Box>
           </HStack>
-          <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-            Telf: {Telephone}
-          </Link>
+          <Phone />
         </>
       )}
 
@@ -63,9 +62,7 @@ export const CardCall = (): JSX.Element => {
             servicio, los mejores precios y la máxima entrega es primordial en
             nuestra empresa.
           </Text>
-          <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-            Telf: {Telephone}
-          </Link>
+          <Phone />
         </VStack>
       )}
     </Box>

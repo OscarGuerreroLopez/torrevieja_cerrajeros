@@ -1,7 +1,7 @@
 import { Link, Image, Box, VStack, useColorModeValue } from "@chakra-ui/react";
 
 import { BusinessTitle, Telephone, TelephoneClick } from "../../constants";
-
+import { Phone } from "../../components/phone";
 export const CenterFooter = (): JSX.Element => {
   const colorMode = useColorModeValue("light", "dark");
 
@@ -17,9 +17,7 @@ export const CenterFooter = (): JSX.Element => {
           alt={BusinessTitle}
           h="auto"
         />
-        <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-          Telf: {Telephone}
-        </Link>
+        <Phone />
       </VStack>
     </Box>
   );

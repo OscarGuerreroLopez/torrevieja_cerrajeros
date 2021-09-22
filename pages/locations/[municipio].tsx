@@ -19,6 +19,8 @@ import Head from "next/head";
 
 import { BusinessTitle, Telephone, TelephoneClick } from "../../src/constants";
 
+import { Phone } from "../../src/components/phone";
+
 const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
@@ -27,7 +29,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
         <title> Cerrajeros {props.municipio}</title>
         <meta
           name="description"
-          content={`Cerrajeros en ${props.municipio}, , aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
+          content={`Cerrajeros en ${props.municipio}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
@@ -66,9 +68,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                   </Text>
                 </Box>
               </HStack>
-              <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                Telefono 24H: {Telephone}
-              </Link>
+              <Phone />
               <HStack p="12">
                 <Box w="55%">
                   <Text variant="main_center" align="left">
@@ -110,9 +110,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                   llaves sencillas o forjadas, apertura de puertas de vehículo,
                   puertas de garaje atascadas o candados de moto.
                 </Text>
-                <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                  Telf 24H: {Telephone}
-                </Link>
+                <Phone />
               </VStack>
               <VStack mt="5" px="2">
                 <Text variant="main_center_mobile">
@@ -129,9 +127,6 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                   posible. El mejor servicio, los mejores precios y la máxima
                   entrega es primordial en nuestra empresa.
                 </Text>
-                <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                  Telf 24H: {Telephone}
-                </Link>
               </VStack>
             </>
           )}

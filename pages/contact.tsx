@@ -14,6 +14,8 @@ import {
 
 import { Cards } from "../src/components/cards";
 
+import { Phone } from "../src/components/phone";
+
 import {
   BusinessTitle,
   LocationServices,
@@ -62,9 +64,7 @@ export const ContactPage: NextPage = () => {
                   <Image src="/phone2.svg" alt={BusinessTitle} />
                 </Box>
               </HStack>
-              <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                Telf: {Telephone}
-              </Link>
+              <Phone />
             </>
           )}
 
@@ -84,9 +84,7 @@ export const ContactPage: NextPage = () => {
                 posible. El mejor servicio, los mejores precios y la máxima
                 entrega es primordial en nuestra empresa.
               </Text>
-              <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                Telf: {Telephone}
-              </Link>
+              <Phone />
             </VStack>
           )}
         </Box>

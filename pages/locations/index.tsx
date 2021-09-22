@@ -21,6 +21,8 @@ import {
   TelephoneClick
 } from "../../src/constants";
 
+import { Phone } from "../../src/components/phone";
+
 export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   const municipios = props.municipios;
@@ -60,9 +62,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
                   </Text>
                 </Box>
               </HStack>
-              <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                Telefono 24H: {Telephone}
-              </Link>
+              <Phone />
             </>
           )}
           {isMobile && (
@@ -78,9 +78,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
                   avería en todo momento, ya sea de la gravedad que sea.
                 </Text>
               </Box>
-              <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                Telf 24H: {Telephone}
-              </Link>
+              <Phone />
             </VStack>
           )}
         </Box>

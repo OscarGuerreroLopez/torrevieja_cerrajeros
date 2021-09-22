@@ -20,7 +20,10 @@ const IndexPage: NextPage = () => {
     <>
       <Head>
         <title>{BusinessTitle}</title>
-        <meta name="description" content="Cerrajeros Torrevieja" />
+        <meta
+          name="description"
+          content={`${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
+        />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
       </Head>

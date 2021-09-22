@@ -13,7 +13,7 @@ import {
 
 import { Cards } from "../../src/components/cards";
 import { BusinessTitle, Telephone, TelephoneClick } from "../../src/constants";
-
+import { Phone } from "../../src/components/phone";
 export const ContactPage: NextPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
@@ -56,9 +56,7 @@ export const ContactPage: NextPage = () => {
                   </Text>
                 </Box>
               </HStack>
-              <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                Telf: {Telephone}
-              </Link>
+              <Phone />
             </>
           )}
 
@@ -84,9 +82,7 @@ export const ContactPage: NextPage = () => {
                 llaves sencillas o forjadas, apertura de puertas de vehículo,
                 puertas de garaje atascadas o candados de moto.
               </Text>
-              <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-                Telf: {Telephone}
-              </Link>
+              <Phone />
             </VStack>
           )}
         </Box>
