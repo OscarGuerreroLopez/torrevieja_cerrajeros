@@ -26,24 +26,33 @@ export const Phone = (): JSX.Element => {
       </Box>
       {isMobile && (
         <HStack>
-          <Box w="50%" align="center">
+          <Box w="40%" align="center">
             <Link href={`tel:${TelephoneClick}`}>
               <Image
-                src="/calling.svg"
+                src="/calling2.svg"
                 alt={BusinessTitle}
-                w={["40%", "45%", "25%", "20%", "15%", "10%"]}
+                w={["50%", "45%", "25%"]}
+              />
+            </Link>
+          </Box>
+          <Box w="20%" align="center">
+            <Link href={`tel:${TelephoneClick}`}>
+              <Image
+                src="/24hours3.svg"
+                alt={BusinessTitle}
+                w={["100%", "90%", "25%"]}
               />
             </Link>
           </Box>
 
-          <Box w="50%" align="center">
+          <Box w="40%" align="center">
             <Link
               href={`https://api.whatsapp.com/send?phone=${IntTelephone}&text=%20Hola Cerrajeros`}
             >
               <Image
                 src="/whatsapp2.png"
                 alt={BusinessTitle}
-                w={["40%", "45%", "25%", "20%", "15%", "10%"]}
+                w={["50%", "45%", "25%"]}
               />
             </Link>
           </Box>
