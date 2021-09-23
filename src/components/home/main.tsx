@@ -1,19 +1,21 @@
-import { Flex, Text, Link, Box } from "@chakra-ui/react";
+import { Flex, Text, Link, Box, useBreakpointValue } from "@chakra-ui/react";
 
-const fontSizes = ["18", "25", "40", "40", "40", "50"];
+const fontSizes = ["15", "17", "22", "25", "30", "50"];
 import { Telephone, TelephoneClick } from "../../constants";
 
 export const MainHome = (): JSX.Element => {
+  const isMobile = useBreakpointValue({ base: true, md: false });
+
   return (
     <Flex>
       <Box
         // bgImage="/lock.jpeg"
-        bgImage="linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/lock.jpeg')"
+        bgImage="linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/lock2.png')"
         bgSize="cover"
         bgPosition="center"
         align="center"
         w="100%"
-        minH="120vh"
+        minH={["70vh", "80vh", "80vh", "80vh", "110vh", "80vh"]}
       >
         <Link
           href={`tel:${TelephoneClick}`}
@@ -100,6 +102,7 @@ export const MainHome = (): JSX.Element => {
         >
           Puertas de garaje
         </Text>
+
         <Text
           w="100%"
           left="50%"
