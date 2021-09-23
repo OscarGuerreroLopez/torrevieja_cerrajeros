@@ -1,18 +1,19 @@
 import { Flex, Text, Link, Box } from "@chakra-ui/react";
 
-const fontSizes = ["15", "20", "30", "30", "30", "45"];
+const fontSizes = ["18", "25", "40", "40", "40", "50"];
 import { Telephone, TelephoneClick } from "../../constants";
 
 export const MainHome = (): JSX.Element => {
   return (
     <Flex>
       <Box
-        bgImage="/keys.jpeg"
+        // bgImage="/lock.jpeg"
+        bgImage="linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('/lock.jpeg')"
         bgSize="cover"
         bgPosition="center"
         align="center"
         w="100%"
-        minH="100vh"
+        minH="120vh"
       >
         <Link
           href={`tel:${TelephoneClick}`}
