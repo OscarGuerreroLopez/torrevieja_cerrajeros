@@ -94,7 +94,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             <>
               <VStack px="2">
                 <Text variant="title">Cerrajeros en {props.municipio}</Text>
-                <Text variant="main_center_mobile">
+                <Text variant="main_card_text">
                   Entre los servicios que ofrecemos para la poblacion de{" "}
                   {props.municipio} estan la instalación, reparación y
                   sustitución de todo tipo de componentes de cerrajería así
@@ -102,7 +102,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                   puertas.
                 </Text>
                 <Image src="/resume.svg" alt={BusinessTitle} w="50%" h="full" />
-                <Text variant="main_center_mobile">
+                <Text variant="main_card_text">
                   Ademas instalación de persianas metálicas de todas las medidas
                   en su negocio o comercio, candados de suelo altamente
                   resistentes, instalación de sofisticados sistemas de seguridad
@@ -113,14 +113,14 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                 <Phone />
               </VStack>
               <VStack mt="5" px="2">
-                <Text variant="main_center_mobile">
+                <Text variant="main_card_text">
                   Puede llamarnos en cualquier momento del día o la noche, ya
                   que contamos con una amplia plantilla de cerrajeros dispuestos
                   a solucionar su avería en todo momento, ya sea de la gravedad
                   que sea.
                 </Text>
                 <Image src="/phone2.svg" alt={BusinessTitle} w="50%" h="full" />
-                <Text variant="main_center_mobile">
+                <Text variant="main_card_text">
                   Para ello, tan solo debe de ponerse en contacto a través de
                   nuestro número de teléfono y le enviaremos a uno de nuestros
                   cerrajeros urgentes donde nos indique con la mayor rapidez
@@ -145,7 +145,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             <Text variant="title" align="center">
               Perdida de llaves:
             </Text>
-            <Text variant="main_center_mobile">
+            <Text variant="main_card_text">
               Servicio de urgencia en {props.municipio} el cual le permitirá
               volver a entrar a su domicilio rapidamente. Se ofrecerá la
               posibilidad de cambiar la cerradura para su mayor tranquilidad.
@@ -164,7 +164,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             <Text variant="title" align="center">
               Aperturas:
             </Text>
-            <Text variant="main_center_mobile">
+            <Text variant="main_card_text">
               Aperturas en {props.municipio} sin roturas en el 90% de los casos.
               Sustitucion de la cerradura para asegurar su vivienda
             </Text>
@@ -182,7 +182,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             <Text variant="title" align="center">
               Cambio de cerraduras:
             </Text>
-            <Text variant="main_center_mobile">
+            <Text variant="main_card_text">
               Cambio de cerraduras en {props.municipio} de manera rapida y
               limpia
             </Text>
@@ -202,7 +202,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             <Text variant="title" align="center">
               Persianas de local y cierres:
             </Text>
-            <Text variant="main_center_mobile">
+            <Text variant="main_card_text">
               Persianas enrrollables, seccionales, correderas y abatibles de
               local Somos especialistas en cierres de seguridad para locales en{" "}
               {props.municipio}
@@ -221,7 +221,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             <Text variant="title" align="center">
               Automatismos:
             </Text>
-            <Text variant="main_center_mobile">
+            <Text variant="main_card_text">
               Arreglo e instalación de motores en {props.municipio} para puertas
               de garaje, correderas, secciónales, abatibles, batientes y cierres
               metálicos Contamos con un equipo de trabajo que ama su oficio y
@@ -243,7 +243,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             <Text variant="title" align="center">
               Persianas de hogar:
             </Text>
-            <Text variant="main_center_mobile">
+            <Text variant="main_card_text">
               Reparamos e instalamos todo tipo de persianas en {props.municipio}{" "}
               para el hogar. Tanto de PVC como de aluminio normal o de
               seguridad, contamos con accesorios como: roldanas, guíacintas,

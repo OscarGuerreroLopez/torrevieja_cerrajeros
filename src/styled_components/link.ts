@@ -30,8 +30,17 @@ export const LinkStyles = {
       }
     }),
     cards: (props: Dict<unknown> | StyleFunctionProps): unknown => ({
-      fontSize: [18, 22, 25, 32],
+      fontSize: [14, 16, 20, 25],
       color: mode(whiten("gray.900", 20), darken("white", 20))(props),
+      _hover: {
+        transform: "scale(1.20)",
+        textDecoration: "none"
+      }
+    }),
+    link_blue: (props: Dict<unknown> | StyleFunctionProps): unknown => ({
+      fontSize: [14, 16, 20, 25],
+      color: mode(whiten("blue.700", 20), darken("blue.500", 20))(props),
+      fontFamily: "Ultra",
       _hover: {
         transform: "scale(1.20)",
         textDecoration: "none"

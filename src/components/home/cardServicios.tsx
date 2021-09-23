@@ -1,4 +1,5 @@
-import { Box, VStack, Text, Image } from "@chakra-ui/react";
+import { Box, HStack, Text, Image, Link } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 import { BusinessTitle } from "../../constants";
 
@@ -12,23 +13,23 @@ export const CardServicios = (): JSX.Element => {
       boxShadow="dark-lg"
       ml={["0", "0", "3"]}
       mt={["3", "3", "0"]}
+      padding={[1, 1, 2]}
     >
-      <VStack>
-        <Text variant="main_center_mobile">
+      <HStack>
+        <Image src="/services.svg" alt={BusinessTitle} w="50%" h="full" />
+        <Text variant="main_card_text">
           Entre los servicios que ofrecemos estan la instalación, reparación y
           sustitución de todo tipo de componentes de cerrajería así como; pomos,
           cerraduras, cerrojos o bombines en todas las puertas
         </Text>
-        <Image src="/services.svg" alt={BusinessTitle} w="50%" h="full" />
-        <Text variant="main_center_mobile">
-          Ademas instalación de persianas metálicas de todas las medidas en su
-          negocio o comercio, candados de suelo altamente resistentes,
-          instalación de sofisticados sistemas de seguridad como anti-palanca o
-          anti-pánico, amaestramiento y duplicado de llaves sencillas o
-          forjadas, apertura de puertas de vehículo, puertas de garaje atascadas
-          o candados de moto.
-        </Text>
-      </VStack>
+      </HStack>
+      <NextLink href="/about">
+        <Box>
+          <Box align="left">
+            <Link variant="link_blue">....mas sobre servicios</Link>
+          </Box>
+        </Box>
+      </NextLink>
     </Box>
   );
 };

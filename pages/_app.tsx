@@ -22,10 +22,10 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   );
 };
 
-export const reportWebVitals = (metric: any): void => {
-  if (metric.label === "web-vital") {
-    console.log(metric);
-  }
-};
+// export const reportWebVitals = (metric: any): void => {
+//   if (metric.label === "web-vital") {
+//     console.log(metric);
+//   }
+// };
 
 export default App;

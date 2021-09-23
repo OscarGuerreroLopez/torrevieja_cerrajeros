@@ -17,7 +17,7 @@ const PrivacyPage: NextPage = () => {
       <Wrap justify="center" mt="5" mb="6" h="100%">
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">Cookies:</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             En esta web recopilamos información y la gestionamos según indicamos
             en nuestra política de privacidad. Una de las formas es a través del
             uso de la tecnología llamada “cookies
@@ -25,7 +25,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">¿Qué es una cookie?</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Una cookie es un fichero de texto inofensivo que se almacena en su
             navegador cuando visita casi cualquier página web. La utilidad de la
             cookie es que la web sea capaz de recordar su visita cuando vuelva a
@@ -36,7 +36,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">¿Qué NO ES una cookie?</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             No es un virus, ni un troyano, ni un gusano, ni spam, ni spyware, ni
             abre ventanas pop-up.
           </Text>
@@ -45,7 +45,7 @@ const PrivacyPage: NextPage = () => {
           <Text variant="main_center">
             ¿Qué información almacena una cookie?
           </Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Las cookies no suelen almacenar información sensible sobre usted,
             como tarjetas de crédito o datos bancarios, fotografías, su DNI o
             información personal, etc. Los datos que guardan son de carácter
@@ -57,7 +57,7 @@ const PrivacyPage: NextPage = () => {
           <Text variant="main_center">
             ¿Qué información almacena una cookie?
           </Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Las cookies no suelen almacenar información sensible sobre usted,
             como tarjetas de crédito o datos bancarios, fotografías, su DNI o
             información personal, etc. Los datos que guardan son de carácter
@@ -69,7 +69,7 @@ const PrivacyPage: NextPage = () => {
           <Text variant="main_center">
             ¿Qué son las cookies propias y las de terceros?
           </Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Las cookies propias son las generadas por la página que está
             visitando y las de terceros son las generadas por servicios o
             proveedores externos como Facebook, Twitter, Google, etc.
@@ -77,7 +77,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">¿Qué cookies utiliza esta web?</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Esta web utiliza cookies propias y de terceros, siguiendo las
             directrices de la Agencia Española de Protección de Datos y como
             exige el artículo 22.2 de la LSSI, procedo a detallar el uso de
@@ -87,7 +87,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">Cookies de terceros:</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Esta web utiliza servicios de análisis, concretamente, Google
             Analytics para ayudar al website a analizar el uso que hacen los
             usuarios del sitio web y mejorar la usabilidad del mismo, pero en
@@ -99,7 +99,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">¿Se pueden eliminar las cookies?</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Sí. No sólo eliminar, también bloquear, de forma general o
             particular para un dominio específico.\ Para eliminar las cookies de
             un sitio web debe ir a la configuración de su navegador y allí podrá
@@ -109,7 +109,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">Más información sobre las cookies:</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Puede consultar el reglamento sobre cookies publicado por la Agencia
             Española de Protección de Datos en su “Guía sobre el uso de las
             cookies” y obtener más información sobre las cookies en Internet,
@@ -124,34 +124,34 @@ const PrivacyPage: NextPage = () => {
       <Wrap justify="center" mt="5" mb="6" h="100%">
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">Politica de Privacidad:</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             En nuestra web se respetan y cuidan los datos personales de los
             usuarios. Como usuario debes saber que tus derechos están
             garantizados.
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Nunca solicitamos información personal a menos que realmente sea
             necesaria para prestarte los servicios y presupuestos que requieras.
           </Text>
         </Box>
 
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Nunca compartimos información personal de nuestros usuarios con
             nadie, excepto para cumplir con la ley o en caso que contemos con tu
             autorización expresa.
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Nunca utilizamos tus datos personales con una finalidad diferente a
             la expresada en esta política de privacidad.
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Hemos adecuado esta web a las exigencias del Reglamento (UE)
             2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016
             relativo a la protección de las personas físicas (RGPD), así como
@@ -160,7 +160,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             {`De conformidad con lo previsto en el Reglamento General de
             Protección de Datos Europeo, se informa a los usuarios del sitio web
             ${MainUrl} de que los datos que faciliten,
@@ -172,14 +172,14 @@ const PrivacyPage: NextPage = () => {
           <Text variant="main_center">
             ¿Cuáles son tus derechos cuando nos facilitas tus datos?
           </Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             {`Cualquier persona tiene derecho a obtener confirmación sobre si en
             ${BusinessTitle} estamos tratando datos personales que nos
             concierne, o no.`}
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Los interesados podrán acceder a sus datos personales, así como a
             solicitar la rectificación de los datos inexactos o, en su caso,
             solicitar su supresión cuando, entre otros motivos, los datos ya no
@@ -193,7 +193,7 @@ const PrivacyPage: NextPage = () => {
           <Text variant="main_center">
             ¿Por cuánto tiempo conservaré tus datos?
           </Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Los datos personales se conservarán mientras se mantengan pendientes
             o se estén ejecutando los servicios contratados.
           </Text>
@@ -202,7 +202,7 @@ const PrivacyPage: NextPage = () => {
           <Text variant="main_center">
             ¿Por cuánto tiempo conservaré tus datos?
           </Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Los datos personales se conservarán mientras se mantengan pendientes
             o se estén ejecutando los servicios contratados.
           </Text>
@@ -211,7 +211,7 @@ const PrivacyPage: NextPage = () => {
           <Text variant="main_center">
             ¿A qué destinatarios se comunicarán tus datos?
           </Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             {`Google Analytics: un servicio analítico de web prestado por Google,
             Inc., una compañía de Delaware cuya oficina principal está en 1600
             Amphitheatre Parkway, Mountain View (California), CA 94043, Estados
@@ -226,7 +226,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">Navegacion:</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             {`Al navegar por  ${MainUrl} se pueden recoger datos
             no identificables, que pueden incluir, direcciones IP, ubicación
             geográfica (aproximadamente), un registro de cómo se utilizan los
@@ -235,7 +235,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Utilizamos esta información para analizar tendencias, administrar el
             sitio, rastrear los movimientos de los usuarios alrededor del sitio
             y para recopilar información demográfica sobre nuestra base de
@@ -244,7 +244,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">Secreto y seguridad de los datos:</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             {` ${MainUrl} se compromete en el uso y tratamiento
             de los datos incluidos personales de los usuarios, respetando su
             confidencialidad y a utilizarlos de acuerdo con la finalidad del
@@ -255,7 +255,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             Esta web incluye un certificado SSL. Se trata de un protocolo de
             seguridad que hace que tus datos viajen de manera íntegra y segura,
             es decir, la transmisión de los datos entre un servidor y usuario
@@ -264,7 +264,7 @@ const PrivacyPage: NextPage = () => {
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
           <Text variant="main_center">Aceptación y consentimiento:</Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             {`El usuario declara haber sido informado de las condiciones sobre
             protección de datos de carácter personal, aceptando y consintiendo
             el tratamiento de los mismos por parte de ${BusinessTitle} en la
@@ -276,7 +276,7 @@ const PrivacyPage: NextPage = () => {
           <Text variant="main_center">
             Cambios en la política de privacidad:
           </Text>
-          <Text variant="main_center_mobile">
+          <Text variant="main_card_text">
             {`${BusinessTitle} se reserva el derecho a modificar la presente
             política para adaptarla a novedades legislativas o
             jurisprudenciales, así como a prácticas de la industria. En dichos

@@ -7,12 +7,12 @@ import {
   VStack,
   Link
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 
-import { BusinessTitle, Telephone, TelephoneClick } from "../../constants";
+import { BusinessTitle } from "../../constants";
 import { Phone } from "../phone";
 
 export const CardCall = (): JSX.Element => {
-  const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <Box
       w="full"
@@ -20,51 +20,26 @@ export const CardCall = (): JSX.Element => {
       align="center"
       py={["3", "3", "0"]}
       boxShadow="dark-lg"
-      rounded="md"
+      ml={["0", "0", "3"]}
       mt={["3", "3", "0"]}
-      padding={[1, 1, 5]}
+      padding={[1, 1, 2]}
     >
-      {!isMobile && (
-        <>
-          <HStack>
-            <Box w="55%">
-              <Text variant="main_center_mobile" align="left">
-                Puede llamarnos en cualquier momento del día o la noche, ya que
-                contamos con una amplia plantilla de cerrajeros dispuestos a
-                solucionar su avería en todo momento, ya sea de la gravedad que
-                sea. Para ello, tan solo debe de ponerse en contacto a través de
-                nuestro número de teléfono y le enviaremos a uno de nuestros
-                cerrajeros urgentes donde nos indique con la mayor rapidez
-                posible. El mejor servicio, los mejores precios y la máxima
-                entrega es primordial en nuestra empresa.
-              </Text>
-            </Box>
-            <Box w="45%">
-              <Image src="/phone.svg" alt={BusinessTitle} />
-            </Box>
-          </HStack>
-          <Phone />
-        </>
-      )}
-
-      {isMobile && (
-        <VStack>
-          <Text variant="main_center_mobile">
-            Puede llamarnos en cualquier momento del día o la noche, ya que
-            contamos con una amplia plantilla de cerrajeros dispuestos a
-            solucionar su avería en todo momento, ya sea de la gravedad que sea.
-          </Text>
-          <Image src="/phone.svg" alt={BusinessTitle} w="50%" h="full" />
-          <Text variant="main_center_mobile">
-            Para ello, tan solo debe de ponerse en contacto a través de nuestro
-            número de teléfono y le enviaremos a uno de nuestros cerrajeros
-            urgentes donde nos indique con la mayor rapidez posible. El mejor
-            servicio, los mejores precios y la máxima entrega es primordial en
-            nuestra empresa.
-          </Text>
-          <Phone />
-        </VStack>
-      )}
+      <HStack>
+        <Image src="/phone.svg" alt={BusinessTitle} w="50%" h="full" />
+        <Text variant="main_card_text">
+          Puede llamarnos en cualquier momento del día o la noche, ya que
+          contamos con una amplia plantilla de cerrajeros dispuestos a
+          solucionar su avería en todo momento, ya sea de la gravedad que sea.
+        </Text>
+      </HStack>
+      <NextLink href="/contact">
+        <Box>
+          <Box align="center">
+            <Link variant="link_blue">....contacto</Link>
+          </Box>
+        </Box>
+      </NextLink>
+      <Phone />
     </Box>
   );
 };

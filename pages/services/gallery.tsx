@@ -45,7 +45,7 @@ export const GalleryPage: NextPage = () => {
           <HStack>
             <Box w={["50%", "50%", "70%"]} p="3">
               <Text
-                variant={isMobile ? "main_center_mobile" : "main_center"}
+                variant={isMobile ? "main_card_text" : "main_center"}
                 align="left"
               >
                 A continuacion se muestran algunos de los trabajos que hemos

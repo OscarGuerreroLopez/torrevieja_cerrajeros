@@ -16,14 +16,9 @@ import { Cards } from "../src/components/cards";
 
 import { Phone } from "../src/components/phone";
 
-import {
-  BusinessTitle,
-  LocationServices,
-  Telephone,
-  TelephoneClick
-} from "../src/constants";
+import { BusinessTitle, LocationServices } from "../src/constants";
 
-export const ContactPage: NextPage = () => {
+const ContactPage: NextPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
@@ -70,14 +65,14 @@ export const ContactPage: NextPage = () => {
 
           {isMobile && (
             <VStack>
-              <Text variant="main_center_mobile">
+              <Text variant="main_card_text">
                 Puede llamarnos en cualquier momento del día o la noche, ya que
                 contamos con una amplia plantilla de cerrajeros dispuestos a
                 solucionar su avería en todo momento, ya sea de la gravedad que
                 sea.
               </Text>
               <Image src="/phone2.svg" alt={BusinessTitle} w="50%" h="full" />
-              <Text variant="main_center_mobile">
+              <Text variant="main_card_text">
                 Para ello, tan solo debe de ponerse en contacto a través de
                 nuestro número de teléfono y le enviaremos a uno de nuestros
                 cerrajeros urgentes donde nos indique con la mayor rapidez
@@ -103,7 +98,7 @@ export const ContactPage: NextPage = () => {
           <NextLink href="/locations">
             <HStack>
               <Box w="65%">
-                <Text variant="main_center_mobile">
+                <Text variant="main_card_text">
                   Prestamos servicio en {LocationServices}. Mas informacion
                   sobre las localidades que trabajamos en:
                 </Text>
@@ -133,7 +128,7 @@ export const ContactPage: NextPage = () => {
                 <Image src="/worker.svg" alt={BusinessTitle} />
               </Box>
               <Box w="65%">
-                <Text variant="main_center_mobile">
+                <Text variant="main_card_text">
                   Puede ver tambien imagenes de nuestros trabajos en:
                 </Text>
                 <Box align="center">
