@@ -54,7 +54,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
                   <Image src="/town.svg" alt={BusinessTitle} />
                 </Box>
                 <Box w="55%">
-                  <Text variant="main_center" align="left">
+                  <Text variant="main_card_text" align="left">
                     Prestamos servicio en {LocationServices}. Puede llamarnos en
                     cualquier momento del día o la noche, ya que contamos con
                     una amplia plantilla de cerrajeros dispuestos a solucionar
@@ -71,7 +71,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
                 <Image src="/town.svg" alt={BusinessTitle} />
               </Box>
               <Box w="100%">
-                <Text variant="main_center" align="left">
+                <Text variant="main_card_text" align="left">
                   Prestamos servicio en {LocationServices}. Puede llamarnos en
                   cualquier momento del día o la noche, ya que contamos con una
                   amplia plantilla de cerrajeros dispuestos a solucionar su
@@ -97,8 +97,8 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
               passHref
               key={`/locations/${municipio}`}
             >
-              <Link variant="header" key={index}>
-                <Text variant="title" align="center">
+              <Link key={index}>
+                <Text variant="main_card_title" align="center">
                   {municipio}
                 </Text>
               </Link>

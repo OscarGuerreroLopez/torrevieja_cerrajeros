@@ -16,7 +16,7 @@ const PrivacyPage: NextPage = () => {
       </Box>
       <Wrap justify="center" mt="5" mb="6" h="100%">
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">Cookies:</Text>
+          <Text variant="main_card_title">Cookies:</Text>
           <Text variant="main_card_text">
             En esta web recopilamos información y la gestionamos según indicamos
             en nuestra política de privacidad. Una de las formas es a través del
@@ -24,7 +24,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">¿Qué es una cookie?</Text>
+          <Text variant="main_card_title">¿Qué es una cookie?</Text>
           <Text variant="main_card_text">
             Una cookie es un fichero de texto inofensivo que se almacena en su
             navegador cuando visita casi cualquier página web. La utilidad de la
@@ -35,14 +35,14 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">¿Qué NO ES una cookie?</Text>
+          <Text variant="main_card_title">¿Qué NO ES una cookie?</Text>
           <Text variant="main_card_text">
             No es un virus, ni un troyano, ni un gusano, ni spam, ni spyware, ni
             abre ventanas pop-up.
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">
+          <Text variant="main_card_title">
             ¿Qué información almacena una cookie?
           </Text>
           <Text variant="main_card_text">
@@ -54,7 +54,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">
+          <Text variant="main_card_title">
             ¿Qué información almacena una cookie?
           </Text>
           <Text variant="main_card_text">
@@ -66,7 +66,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">
+          <Text variant="main_card_title">
             ¿Qué son las cookies propias y las de terceros?
           </Text>
           <Text variant="main_card_text">
@@ -76,7 +76,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">¿Qué cookies utiliza esta web?</Text>
+          <Text variant="main_card_title">¿Qué cookies utiliza esta web?</Text>
           <Text variant="main_card_text">
             Esta web utiliza cookies propias y de terceros, siguiendo las
             directrices de la Agencia Española de Protección de Datos y como
@@ -86,7 +86,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">Cookies de terceros:</Text>
+          <Text variant="main_card_title">Cookies de terceros:</Text>
           <Text variant="main_card_text">
             Esta web utiliza servicios de análisis, concretamente, Google
             Analytics para ayudar al website a analizar el uso que hacen los
@@ -98,7 +98,9 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">¿Se pueden eliminar las cookies?</Text>
+          <Text variant="main_card_title">
+            ¿Se pueden eliminar las cookies?
+          </Text>
           <Text variant="main_card_text">
             Sí. No sólo eliminar, también bloquear, de forma general o
             particular para un dominio específico.\ Para eliminar las cookies de
@@ -108,7 +110,9 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">Más información sobre las cookies:</Text>
+          <Text variant="main_card_title">
+            Más información sobre las cookies:
+          </Text>
           <Text variant="main_card_text">
             Puede consultar el reglamento sobre cookies publicado por la Agencia
             Española de Protección de Datos en su “Guía sobre el uso de las
@@ -123,7 +127,7 @@ const PrivacyPage: NextPage = () => {
 
       <Wrap justify="center" mt="5" mb="6" h="100%">
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">Politica de Privacidad:</Text>
+          <Text variant="main_card_title">Politica de Privacidad:</Text>
           <Text variant="main_card_text">
             En nuestra web se respetan y cuidan los datos personales de los
             usuarios. Como usuario debes saber que tus derechos están
@@ -169,7 +173,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">
+          <Text variant="main_card_title">
             ¿Cuáles son tus derechos cuando nos facilitas tus datos?
           </Text>
           <Text variant="main_card_text">
@@ -190,7 +194,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">
+          <Text variant="main_card_title">
             ¿Por cuánto tiempo conservaré tus datos?
           </Text>
           <Text variant="main_card_text">
@@ -199,7 +203,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">
+          <Text variant="main_card_title">
             ¿Por cuánto tiempo conservaré tus datos?
           </Text>
           <Text variant="main_card_text">
@@ -208,7 +212,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">
+          <Text variant="main_card_title">
             ¿A qué destinatarios se comunicarán tus datos?
           </Text>
           <Text variant="main_card_text">
@@ -225,7 +229,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">Navegacion:</Text>
+          <Text variant="main_card_title">Navegacion:</Text>
           <Text variant="main_card_text">
             {`Al navegar por  ${MainUrl} se pueden recoger datos
             no identificables, que pueden incluir, direcciones IP, ubicación
@@ -243,7 +247,9 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">Secreto y seguridad de los datos:</Text>
+          <Text variant="main_card_title">
+            Secreto y seguridad de los datos:
+          </Text>
           <Text variant="main_card_text">
             {` ${MainUrl} se compromete en el uso y tratamiento
             de los datos incluidos personales de los usuarios, respetando su
@@ -263,7 +269,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">Aceptación y consentimiento:</Text>
+          <Text variant="main_card_title">Aceptación y consentimiento:</Text>
           <Text variant="main_card_text">
             {`El usuario declara haber sido informado de las condiciones sobre
             protección de datos de carácter personal, aceptando y consintiendo
@@ -273,7 +279,7 @@ const PrivacyPage: NextPage = () => {
           </Text>
         </Box>
         <Box w={["98%", "47%", "31%"]} boxShadow="dark-lg" padding={[1, 1, 2]}>
-          <Text variant="main_center">
+          <Text variant="main_card_title">
             Cambios en la política de privacidad:
           </Text>
           <Text variant="main_card_text">

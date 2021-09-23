@@ -20,7 +20,7 @@ export const Phone = (): JSX.Element => {
   return (
     <>
       <Box w="100%" align="center">
-        <Link href={`tel:${TelephoneClick}`} variant="phone_click">
+        <Link href={`tel:${TelephoneClick}`} variant="link_phone">
           Telf: {Telephone}
         </Link>
       </Box>

@@ -33,7 +33,7 @@ export const RightHeader = (): JSX.Element => {
             <HStack spacing={[3, 5, 7]}>
               {MenuItems.map((item, index) => (
                 <NextLink href={item.link} key={index}>
-                  <Link variant="header" key={index}>
+                  <Link variant="header_link" key={index}>
                     {item.text}
                   </Link>
                 </NextLink>

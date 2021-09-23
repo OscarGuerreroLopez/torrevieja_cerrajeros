@@ -12,7 +12,7 @@ import {
   Text
 } from "@chakra-ui/react";
 
-import { Cards } from "../../src/components/cards";
+import { Phone } from "../../src/components/phone";
 
 import {
   BusinessTitle,
@@ -22,7 +22,6 @@ import {
 } from "../../src/constants";
 
 export const GalleryPage: NextPage = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
       <Head>
@@ -44,10 +43,7 @@ export const GalleryPage: NextPage = () => {
         >
           <HStack>
             <Box w={["50%", "50%", "70%"]} p="3">
-              <Text
-                variant={isMobile ? "main_card_text" : "main_center"}
-                align="left"
-              >
+              <Text variant="main_card_text" align="left">
                 A continuacion se muestran algunos de los trabajos que hemos
                 realizado para diferentes clientes:
               </Text>
@@ -56,9 +52,7 @@ export const GalleryPage: NextPage = () => {
               <Image src="/gallery.svg" alt={BusinessTitle} />
             </Box>
           </HStack>
-          <Link href={`tel:${TelephoneClick}`} variant="phone_click">
-            Telf: {Telephone}
-          </Link>
+          <Phone />
         </Box>
       </Container>
       <Wrap justify="center" mt="5" mb="6" h="100%">

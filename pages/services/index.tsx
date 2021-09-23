@@ -42,7 +42,7 @@ export const ContactPage: NextPage = () => {
                   <Image src="/services2.svg" alt={BusinessTitle} />
                 </Box>
                 <Box w="55%">
-                  <Text variant="main_center" align="left">
+                  <Text variant="main_card_text" align="left">
                     Entre los servicios que ofrecemos estan la instalación,
                     reparación y sustitución de todo tipo de componentes de
                     cerrajería así como; pomos, cerraduras, cerrojos o bombines
@@ -97,7 +97,7 @@ export const ContactPage: NextPage = () => {
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Perdida de llaves:
             </Text>
             <Text variant="main_card_text">
@@ -116,7 +116,7 @@ export const ContactPage: NextPage = () => {
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Aperturas:
             </Text>
             <Text variant="main_card_text">
@@ -134,7 +134,7 @@ export const ContactPage: NextPage = () => {
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Cambio de cerraduras:
             </Text>
             <Text variant="main_card_text">
@@ -153,7 +153,7 @@ export const ContactPage: NextPage = () => {
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Persianas de local y cierres:
             </Text>
             <Text variant="main_card_text">
@@ -171,7 +171,7 @@ export const ContactPage: NextPage = () => {
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Automatismos:
             </Text>
             <Text variant="main_card_text">
@@ -193,7 +193,7 @@ export const ContactPage: NextPage = () => {
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Persianas de hogar:
             </Text>
             <Text variant="main_card_text">

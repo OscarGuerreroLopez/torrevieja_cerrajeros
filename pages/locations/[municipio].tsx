@@ -52,8 +52,10 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                   <Image src="/resume.svg" alt={BusinessTitle} />
                 </Box>
                 <Box w="55%">
-                  <Text variant="title">Cerrajeros en {props.municipio}</Text>
-                  <Text variant="main_center" align="left">
+                  <Text variant="main_card_title">
+                    Cerrajeros en {props.municipio}
+                  </Text>
+                  <Text variant="main_card_text" align="left">
                     Entre los servicios que ofrecemos para la poblacion de{" "}
                     {props.municipio} estan la instalación, reparación y
                     sustitución de todo tipo de componentes de cerrajería así
@@ -71,7 +73,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
               <Phone />
               <HStack p="12">
                 <Box w="55%">
-                  <Text variant="main_center" align="left">
+                  <Text variant="main_card_text" align="left">
                     Puede llamarnos en cualquier momento del día o la noche, ya
                     que contamos con una amplia plantilla de cerrajeros
                     dispuestos a solucionar su avería en todo momento, ya sea de
@@ -93,7 +95,9 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
           {isMobile && (
             <>
               <VStack px="2">
-                <Text variant="title">Cerrajeros en {props.municipio}</Text>
+                <Text variant="main_card_title">
+                  Cerrajeros en {props.municipio}
+                </Text>
                 <Text variant="main_card_text">
                   Entre los servicios que ofrecemos para la poblacion de{" "}
                   {props.municipio} estan la instalación, reparación y
@@ -142,7 +146,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mt={["3", "3", "4"]}
             padding="2"
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Perdida de llaves:
             </Text>
             <Text variant="main_card_text">
@@ -161,7 +165,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mt={["3", "3", "4"]}
             padding="2"
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Aperturas:
             </Text>
             <Text variant="main_card_text">
@@ -179,7 +183,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mt={["3", "3", "4"]}
             padding="2"
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Cambio de cerraduras:
             </Text>
             <Text variant="main_card_text">
@@ -199,7 +203,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mt={["3", "3", "4"]}
             padding="2"
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Persianas de local y cierres:
             </Text>
             <Text variant="main_card_text">
@@ -218,7 +222,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mt={["3", "3", "4"]}
             padding="2"
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Automatismos:
             </Text>
             <Text variant="main_card_text">
@@ -240,7 +244,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mt={["3", "3", "4"]}
             padding="2"
           >
-            <Text variant="title" align="center">
+            <Text variant="main_card_title" align="center">
               Persianas de hogar:
             </Text>
             <Text variant="main_card_text">

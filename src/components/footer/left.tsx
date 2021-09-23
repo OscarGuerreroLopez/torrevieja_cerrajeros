@@ -14,7 +14,7 @@ export const LeftFooter = (): JSX.Element => {
       <VStack w="full" align="center">
         {MenuItems.map((item, index) => (
           <NextLink href={item.link} key={index}>
-            <Link variant="footer" key={index}>
+            <Link variant="footer_link" key={index}>
               {item.text}
             </Link>
           </NextLink>

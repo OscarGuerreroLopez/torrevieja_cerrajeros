@@ -42,8 +42,8 @@ const AboutPage: NextPage = () => {
             <>
               <HStack p="12">
                 <Box w="55%">
-                  <Text variant="title">¿Quienes somos?</Text>
-                  <Text variant="main_center" align="left">
+                  <Text variant="main_card_title">¿Quienes somos?</Text>
+                  <Text variant="main_card_text" align="left">
                     Contamos con más de 10 años de experiencia ofreciendo un
                     servicio de calidad, siempre preocupados por satisfacer las
                     necesidades de nuestros clientes. Para nosostros es
@@ -64,7 +64,7 @@ const AboutPage: NextPage = () => {
 
           {isMobile && (
             <VStack>
-              <Text variant="title">¿Quienes somos?</Text>
+              <Text variant="main_card_title">¿Quienes somos?</Text>
               <Text variant="main_card_text">
                 Contamos con más de 10 años de experiencia ofreciendo un
                 servicio de calidad, siempre preocupados por satisfacer las
@@ -93,7 +93,7 @@ const AboutPage: NextPage = () => {
           mt={["4", "4", "0"]}
           padding={[1, 1, 2]}
         >
-          <Text variant="title" align="center">
+          <Text variant="main_card_title" align="center">
             ¿Que ofrecemos?
           </Text>
           <NextLink href="/locations">
@@ -119,7 +119,7 @@ const AboutPage: NextPage = () => {
           mt={["4", "4", "0"]}
           padding={[1, 1, 2]}
         >
-          <Text variant="title" align="center">
+          <Text variant="main_card_title" align="center">
             ¿Por que confiar en nosotros?
           </Text>
           <NextLink href="/locations">
@@ -147,7 +147,7 @@ const AboutPage: NextPage = () => {
           mt={["5", "5", "0"]}
           padding={[1, 1, 2]}
         >
-          <Text variant="title">Nuestro compromiso</Text>
+          <Text variant="main_card_title">Nuestro compromiso</Text>
           <Text variant="main_card_text" align="left">
             {`Contamos con un equipo de trabajo que ama su oficio y que sabe lo que es esforzarse para obtener un excelente resultado final. Tenemos claro nuestros objetivos y la normativa vigente cuando de reparación de puertas automáticas se trata. En ${BusinessTitle} entendemos que este es un sector cada día más competitivo y de reputación, por esta razón, nos esforzamos para ofrecerle calidad en cada servicio prestado, dedicándole buena parte de nuestro empeño al estudio de nuevos materiales y de efectivas soluciones de reparación de puertas automáticas de garaje y Puertas automáticas de garaje en general.`}
           </Text>

@@ -22,9 +22,9 @@ export const TextStyles = {
         textDecoration: "none"
       }
     }),
-    main_center: (props: Dict<unknown> | StyleFunctionProps): unknown => ({
-      fontSize: [22, 25, 15, 18, 20, 35],
-      fontFamily: "Roboto",
+    main_card_title: (props: Dict<unknown> | StyleFunctionProps): unknown => ({
+      fontSize: [17, 22, 23, 32],
+      fontFamily: "Ultra",
       color: mode(whiten("gray.700", 20), darken("white", 20))(props),
       _hover: {
         transform: "scale(1.05)",
@@ -41,7 +41,7 @@ export const TextStyles = {
       }
     }),
     main_card_text: (props: Dict<unknown> | StyleFunctionProps): unknown => ({
-      fontSize: [15, 15],
+      fontSize: [17, 19, 20, 22],
       fontFamily: "Scheherazade+New",
       align: "center",
       color: mode(whiten("gray.700", 20), darken("white", 20))(props)

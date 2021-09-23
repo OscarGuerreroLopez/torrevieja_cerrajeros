@@ -43,7 +43,7 @@ const ContactPage: NextPage = () => {
             <>
               <HStack p="12">
                 <Box w="55%">
-                  <Text variant="main_center" align="left">
+                  <Text variant="main_card_text" align="left">
                     Puede llamarnos en cualquier momento del día o la noche, ya
                     que contamos con una amplia plantilla de cerrajeros
                     dispuestos a solucionar su avería en todo momento, ya sea de
@@ -103,7 +103,7 @@ const ContactPage: NextPage = () => {
                   sobre las localidades que trabajamos en:
                 </Text>
                 <Box align="center">
-                  <Link variant="cards">....Cobertura</Link>
+                  <Link variant="link_blue">....Cobertura</Link>
                 </Box>
               </Box>
               <Box w="35%">
@@ -132,7 +132,7 @@ const ContactPage: NextPage = () => {
                   Puede ver tambien imagenes de nuestros trabajos en:
                 </Text>
                 <Box align="center">
-                  <Link variant="cards">....Galeria</Link>
+                  <Link variant="link_blue">....Galeria</Link>
                 </Box>
               </Box>
             </HStack>
