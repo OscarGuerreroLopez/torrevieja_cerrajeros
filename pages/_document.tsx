@@ -18,7 +18,8 @@ export default class CustomDocument extends Document {
         <body>
           <noscript
             dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ4B9H8" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ4B9H8"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>`
             }}
           ></noscript>
 
@@ -31,3 +32,4 @@ export default class CustomDocument extends Document {
 }
 
 // https://www.youtube.com/watch?v=FTLHqyQ9NqY
+// https://www.youtube.com/watch?v=_wq5nfKQ3DM

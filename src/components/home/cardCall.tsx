@@ -10,9 +10,7 @@ export const CardCall = (): JSX.Element => {
       w="full"
       h="full"
       align="center"
-      py={["3", "3", "0"]}
       boxShadow="dark-lg"
-      ml={["0", "0", "3"]}
       mt={["3", "3", "0"]}
       padding={[1, 1, 2]}
       rounded="lg"
