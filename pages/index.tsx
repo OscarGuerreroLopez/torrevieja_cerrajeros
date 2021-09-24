@@ -30,12 +30,11 @@ const IndexPage: NextPage = () => {
 
       <MainHome />
 
-      <Brands />
-
       <Cards>
         <CardIntro />
         <CardServicios />
       </Cards>
+      <Brands />
       <Cards>
         <CardCall />
       </Cards>

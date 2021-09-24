@@ -1,4 +1,4 @@
-import { Flex, VStack, Image, Text } from "@chakra-ui/react";
+import { Flex, VStack, Image, Text, Box } from "@chakra-ui/react";
 import { BusinessTitle } from "../../constants";
 
 export const Brands = (): JSX.Element => {
@@ -9,6 +9,7 @@ export const Brands = (): JSX.Element => {
           <Text variant="main_center_blue" align="left">
             Solo primeras marcas
           </Text>
+
           <Image src="/marcas.jpeg" alt={BusinessTitle} />
         </VStack>
       </Flex>

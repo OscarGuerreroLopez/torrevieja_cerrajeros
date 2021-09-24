@@ -15,7 +15,7 @@ export const MainHome = (): JSX.Element => {
         bgPosition="center"
         align="center"
         w="100%"
-        minH={["70vh", "80vh", "80vh", "80vh", "110vh", "80vh"]}
+        minH={["90vh", "90vh", "90vh", "90vh", "110vh", "120vh"]}
       >
         <Link
           href={`tel:${TelephoneClick}`}

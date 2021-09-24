@@ -9,11 +9,7 @@ export const CenterFooter = (): JSX.Element => {
     <Box w={["100%", "100%", "33%"]} mb={["5", "5", "0"]}>
       <VStack w="full" align="center">
         <Image
-          src={
-            colorMode === "light"
-              ? "/logo-cerrajero_light.jpeg"
-              : "/logo-cerrajero_dark.jpeg"
-          }
+          src={colorMode === "light" ? "/logo2.svg" : "/logo2dark.svg"}
           alt={BusinessTitle}
           h="auto"
         />
