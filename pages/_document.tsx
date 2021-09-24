@@ -14,7 +14,6 @@ export default class CustomDocument extends Document {
               })(window,document,'script','dataLayer','GTM-MQ4B9H8');`
             }}
           ></script>
-          <meta name="custom" content="test oscar" />
         </Head>
         <body>
           <noscript
