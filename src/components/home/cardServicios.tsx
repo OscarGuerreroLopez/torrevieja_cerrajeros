@@ -23,7 +23,7 @@ export const CardServicios = (): JSX.Element => {
           cerraduras, cerrojos o bombines en todas las puertas
         </Text>
       </HStack>
-      <NextLink href="/about">
+      <NextLink href="/services">
         <Box>
           <Box align="left">
             <Link variant="link_blue">....mas sobre servicios</Link>
