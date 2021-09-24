@@ -5,7 +5,8 @@ import {
   useBreakpointValue,
   Image,
   HStack,
-  VStack
+  VStack,
+  Flex
 } from "@chakra-ui/react";
 
 import municipioList from "../../lib/municipios.json";
@@ -35,105 +36,118 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
       </Head>
 
       <Container maxWidth="container.xl" padding={[0, 0, 10]}>
-        <Box
-          w="full"
-          h="full"
-          align="center"
-          py={["3", "3", "0"]}
-          boxShadow="dark-lg"
-          rounded="lg"
-          mt={["3", "3", "0"]}
-        >
-          {!isMobile && (
-            <>
-              <HStack p="12">
-                <Box w="45%" p="5">
-                  <Image src="/resume.svg" alt={BusinessTitle} />
-                </Box>
-                <Box w="55%">
+        <Flex padding={[1, 1, 0]}>
+          <Box
+            w="full"
+            h="full"
+            align="center"
+            py={["3", "3", "0"]}
+            boxShadow="dark-lg"
+            rounded="lg"
+            mt={["3", "3", "0"]}
+          >
+            {!isMobile && (
+              <>
+                <HStack p="12">
+                  <Box w="45%" p="5">
+                    <Image src="/resume.svg" alt={BusinessTitle} />
+                  </Box>
+                  <Box w="55%">
+                    <Text variant="main_card_title">
+                      Cerrajeros en {props.municipio}
+                    </Text>
+                    <Text variant="main_card_text" align="left">
+                      Entre los servicios que ofrecemos para la poblacion de{" "}
+                      {props.municipio} estan la instalación, reparación y
+                      sustitución de todo tipo de componentes de cerrajería así
+                      como; pomos, cerraduras, cerrojos o bombines en todas las
+                      puertas. Ademas instalación de persianas metálicas de
+                      todas las medidas en su negocio o comercio, candados de
+                      suelo altamente resistentes, instalación de sofisticados
+                      sistemas de seguridad como anti-palanca o anti-pánico,
+                      amaestramiento y duplicado de llaves sencillas o forjadas,
+                      apertura de puertas de vehículo, puertas de garaje
+                      atascadas o candados de moto.
+                    </Text>
+                  </Box>
+                </HStack>
+                <Phone />
+                <HStack p="12">
+                  <Box w="55%">
+                    <Text variant="main_card_text" align="left">
+                      Puede llamarnos en cualquier momento del día o la noche,
+                      ya que contamos con una amplia plantilla de cerrajeros
+                      dispuestos a solucionar su avería en todo momento, ya sea
+                      de la gravedad que sea. Para ello, tan solo debe de
+                      ponerse en contacto a través de nuestro número de teléfono
+                      y le enviaremos a uno de nuestros cerrajeros urgentes
+                      donde nos indique con la mayor rapidez posible. El mejor
+                      servicio, los mejores precios y la máxima entrega es
+                      primordial en nuestra empresa.
+                    </Text>
+                  </Box>
+                  <Box w="45%">
+                    <Image src="/phone2.svg" alt={BusinessTitle} />
+                  </Box>
+                </HStack>
+              </>
+            )}
+
+            {isMobile && (
+              <>
+                <VStack px="2">
                   <Text variant="main_card_title">
                     Cerrajeros en {props.municipio}
                   </Text>
-                  <Text variant="main_card_text" align="left">
+                  <Text variant="main_card_text">
                     Entre los servicios que ofrecemos para la poblacion de{" "}
                     {props.municipio} estan la instalación, reparación y
                     sustitución de todo tipo de componentes de cerrajería así
                     como; pomos, cerraduras, cerrojos o bombines en todas las
-                    puertas. Ademas instalación de persianas metálicas de todas
-                    las medidas en su negocio o comercio, candados de suelo
+                    puertas.
+                  </Text>
+                  <Image
+                    src="/resume.svg"
+                    alt={BusinessTitle}
+                    w="50%"
+                    h="full"
+                  />
+                  <Text variant="main_card_text">
+                    Ademas instalación de persianas metálicas de todas las
+                    medidas en su negocio o comercio, candados de suelo
                     altamente resistentes, instalación de sofisticados sistemas
                     de seguridad como anti-palanca o anti-pánico, amaestramiento
                     y duplicado de llaves sencillas o forjadas, apertura de
                     puertas de vehículo, puertas de garaje atascadas o candados
                     de moto.
                   </Text>
-                </Box>
-              </HStack>
-              <Phone />
-              <HStack p="12">
-                <Box w="55%">
-                  <Text variant="main_card_text" align="left">
+                  <Phone />
+                </VStack>
+                <VStack mt="5" px="2">
+                  <Text variant="main_card_text">
                     Puede llamarnos en cualquier momento del día o la noche, ya
                     que contamos con una amplia plantilla de cerrajeros
                     dispuestos a solucionar su avería en todo momento, ya sea de
-                    la gravedad que sea. Para ello, tan solo debe de ponerse en
-                    contacto a través de nuestro número de teléfono y le
-                    enviaremos a uno de nuestros cerrajeros urgentes donde nos
-                    indique con la mayor rapidez posible. El mejor servicio, los
-                    mejores precios y la máxima entrega es primordial en nuestra
-                    empresa.
+                    la gravedad que sea.
                   </Text>
-                </Box>
-                <Box w="45%">
-                  <Image src="/phone2.svg" alt={BusinessTitle} />
-                </Box>
-              </HStack>
-            </>
-          )}
-
-          {isMobile && (
-            <>
-              <VStack px="2">
-                <Text variant="main_card_title">
-                  Cerrajeros en {props.municipio}
-                </Text>
-                <Text variant="main_card_text">
-                  Entre los servicios que ofrecemos para la poblacion de{" "}
-                  {props.municipio} estan la instalación, reparación y
-                  sustitución de todo tipo de componentes de cerrajería así
-                  como; pomos, cerraduras, cerrojos o bombines en todas las
-                  puertas.
-                </Text>
-                <Image src="/resume.svg" alt={BusinessTitle} w="50%" h="full" />
-                <Text variant="main_card_text">
-                  Ademas instalación de persianas metálicas de todas las medidas
-                  en su negocio o comercio, candados de suelo altamente
-                  resistentes, instalación de sofisticados sistemas de seguridad
-                  como anti-palanca o anti-pánico, amaestramiento y duplicado de
-                  llaves sencillas o forjadas, apertura de puertas de vehículo,
-                  puertas de garaje atascadas o candados de moto.
-                </Text>
-                <Phone />
-              </VStack>
-              <VStack mt="5" px="2">
-                <Text variant="main_card_text">
-                  Puede llamarnos en cualquier momento del día o la noche, ya
-                  que contamos con una amplia plantilla de cerrajeros dispuestos
-                  a solucionar su avería en todo momento, ya sea de la gravedad
-                  que sea.
-                </Text>
-                <Image src="/phone2.svg" alt={BusinessTitle} w="50%" h="full" />
-                <Text variant="main_card_text">
-                  Para ello, tan solo debe de ponerse en contacto a través de
-                  nuestro número de teléfono y le enviaremos a uno de nuestros
-                  cerrajeros urgentes donde nos indique con la mayor rapidez
-                  posible. El mejor servicio, los mejores precios y la máxima
-                  entrega es primordial en nuestra empresa.
-                </Text>
-              </VStack>
-            </>
-          )}
-        </Box>
+                  <Image
+                    src="/phone2.svg"
+                    alt={BusinessTitle}
+                    w="50%"
+                    h="full"
+                  />
+                  <Text variant="main_card_text">
+                    Para ello, tan solo debe de ponerse en contacto a través de
+                    nuestro número de teléfono y le enviaremos a uno de nuestros
+                    cerrajeros urgentes donde nos indique con la mayor rapidez
+                    posible. El mejor servicio, los mejores precios y la máxima
+                    entrega es primordial en nuestra empresa.
+                  </Text>
+                </VStack>
+              </>
+            )}
+          </Box>
+        </Flex>
         <Cards>
           <Box
             w="full"
