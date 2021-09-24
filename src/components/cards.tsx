@@ -11,7 +11,7 @@ export const Cards: React.FC<AuxProps> = ({ children }): JSX.Element => {
         h="auto"
         w={["100%", "100%", "100%"]}
         direction={{ base: "column", md: "row" }}
-        padding={[1, 1, 2]}
+        padding={[1, 1, 7]}
       >
         {children}
       </Flex>
