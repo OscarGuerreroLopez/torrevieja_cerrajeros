@@ -17,7 +17,7 @@ import { Cards } from "../../src/components/cards";
 
 import Head from "next/head";
 
-import { BusinessTitle } from "../../src/constants";
+import { BusinessTitle, Telephone } from "../../src/constants";
 
 import { Phone } from "../../src/components/phone";
 
@@ -26,7 +26,10 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
   return (
     <>
       <Head>
-        <title> Cerrajeros {props.municipio}</title>
+        <title>
+          {" "}
+          {`Cerrajeros ${props.municipio}. 24 Horas. Telf: ${Telephone}`}
+        </title>
         <meta
           name="description"
           content={`Cerrajeros en ${props.municipio}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}

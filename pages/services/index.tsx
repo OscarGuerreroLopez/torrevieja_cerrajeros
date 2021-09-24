@@ -134,7 +134,6 @@ export const ContactPage: NextPage = () => {
             align="left"
             py={["3", "3", "0"]}
             boxShadow="dark-lg"
-            mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
             rounded="lg"
@@ -196,7 +195,6 @@ export const ContactPage: NextPage = () => {
             align="left"
             py={["3", "3", "0"]}
             boxShadow="dark-lg"
-            mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
             rounded="lg"
