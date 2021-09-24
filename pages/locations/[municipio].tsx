@@ -41,7 +41,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             w="full"
             h="full"
             align="center"
-            py={["3", "3", "0"]}
+            py={["2", "2", "0"]}
             boxShadow="dark-lg"
             rounded="lg"
             mt={["3", "3", "0"]}
