@@ -1,11 +1,9 @@
-import { Flex, Text, Link, Box, useBreakpointValue } from "@chakra-ui/react";
+import { Flex, Text, Link, Box } from "@chakra-ui/react";
 
 const fontSizes = ["15", "17", "22", "25", "30", "50"];
 import { Telephone, TelephoneClick } from "../../constants";
 
 export const MainHome = (): JSX.Element => {
-  const isMobile = useBreakpointValue({ base: true, md: false });
-
   return (
     <Flex>
       <Box

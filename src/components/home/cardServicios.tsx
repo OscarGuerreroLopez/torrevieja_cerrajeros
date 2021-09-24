@@ -14,6 +14,7 @@ export const CardServicios = (): JSX.Element => {
       ml={["0", "0", "3"]}
       mt={["3", "3", "0"]}
       padding={[1, 1, 2]}
+      rounded="lg"
     >
       <HStack>
         <Image src="/services.svg" alt={BusinessTitle} w="50%" h="full" />

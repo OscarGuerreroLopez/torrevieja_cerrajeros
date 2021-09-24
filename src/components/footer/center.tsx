@@ -1,6 +1,6 @@
-import { Link, Image, Box, VStack, useColorModeValue } from "@chakra-ui/react";
+import { Image, Box, VStack, useColorModeValue } from "@chakra-ui/react";
 
-import { BusinessTitle, Telephone, TelephoneClick } from "../../constants";
+import { BusinessTitle } from "../../constants";
 import { Phone } from "../../components/phone";
 export const CenterFooter = (): JSX.Element => {
   const colorMode = useColorModeValue("light", "dark");

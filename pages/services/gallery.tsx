@@ -1,25 +1,11 @@
 import { NextPage } from "next";
 
 import Head from "next/head";
-import {
-  Container,
-  Box,
-  useBreakpointValue,
-  Image,
-  Link,
-  HStack,
-  Wrap,
-  Text
-} from "@chakra-ui/react";
+import { Container, Box, Image, HStack, Wrap, Text } from "@chakra-ui/react";
 
 import { Phone } from "../../src/components/phone";
 
-import {
-  BusinessTitle,
-  Photos,
-  Telephone,
-  TelephoneClick
-} from "../../src/constants";
+import { BusinessTitle, Photos } from "../../src/constants";
 
 export const GalleryPage: NextPage = () => {
   return (
@@ -31,14 +17,14 @@ export const GalleryPage: NextPage = () => {
         <meta charSet="UTF-8" />
       </Head>
 
-      <Container maxWidth="container.xl" padding={[0, 0, 10]}>
+      <Container maxWidth="container.xl" mt={[0, 0, 6]}>
         <Box
           w="full"
           h="full"
           align="center"
           py={["3", "3", "0"]}
           boxShadow="dark-lg"
-          rounded="md"
+          rounded="lg"
           mt={["3", "3", "0"]}
         >
           <HStack>
@@ -61,6 +47,7 @@ export const GalleryPage: NextPage = () => {
             w={["95%", "95%", "45%"]}
             boxShadow="dark-lg"
             padding={[1, 1, 2]}
+            rounded="lg"
             key={index}
           >
             <Image src={`/${photo}.jpeg`} alt={BusinessTitle} key={index} />

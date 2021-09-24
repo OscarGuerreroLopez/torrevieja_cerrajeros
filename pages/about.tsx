@@ -5,14 +5,13 @@ import {
   Box,
   useBreakpointValue,
   Image,
-  Link,
   HStack,
   VStack,
   Text
 } from "@chakra-ui/react";
 import Head from "next/head";
 
-import { BusinessTitle, LocationServices } from "../src/constants";
+import { BusinessTitle } from "../src/constants";
 import { Phone } from "../src/components/phone";
 import { Cards } from "../src/components/cards";
 

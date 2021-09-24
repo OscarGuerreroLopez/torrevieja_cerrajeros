@@ -9,17 +9,13 @@ import {
   HStack,
   VStack,
   Text,
-  Wrap
+  Wrap,
+  Flex
 } from "@chakra-ui/react";
 
 import municipioList from "../../lib/municipios.json";
 import NextLink from "next/link";
-import {
-  BusinessTitle,
-  LocationServices,
-  Telephone,
-  TelephoneClick
-} from "../../src/constants";
+import { BusinessTitle, LocationServices } from "../../src/constants";
 
 import { Phone } from "../../src/components/phone";
 
@@ -36,24 +32,43 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
         <meta charSet="UTF-8" />
       </Head>
 
-      <Container maxWidth="container.xl" padding={[0, 0, 10]}>
-        <Box
-          w="full"
-          h="full"
-          align="center"
-          py={["3", "3", "0"]}
-          px="2"
-          boxShadow="dark-lg"
-          rounded="md"
-          mt={["3", "3", "0"]}
-        >
-          {!isMobile && (
-            <>
-              <HStack p="12">
-                <Box w="45%">
+      <Container maxWidth="container.xl" padding={[0, 0, 6]}>
+        <Flex padding={[1, 1, 0]}>
+          <Box
+            w="full"
+            h="full"
+            align="center"
+            py={["3", "3", "0"]}
+            px="2"
+            boxShadow="dark-lg"
+            rounded="lg"
+            mt={["3", "3", "0"]}
+          >
+            {!isMobile && (
+              <>
+                <HStack p="12">
+                  <Box w="45%">
+                    <Image src="/town.svg" alt={BusinessTitle} />
+                  </Box>
+                  <Box w="55%">
+                    <Text variant="main_card_text" align="left">
+                      Prestamos servicio en {LocationServices}. Puede llamarnos
+                      en cualquier momento del día o la noche, ya que contamos
+                      con una amplia plantilla de cerrajeros dispuestos a
+                      solucionar su avería en todo momento, ya sea de la
+                      gravedad que sea.
+                    </Text>
+                  </Box>
+                </HStack>
+                <Phone />
+              </>
+            )}
+            {isMobile && (
+              <VStack>
+                <Box w="100%">
                   <Image src="/town.svg" alt={BusinessTitle} />
                 </Box>
-                <Box w="55%">
+                <Box w="100%">
                   <Text variant="main_card_text" align="left">
                     Prestamos servicio en {LocationServices}. Puede llamarnos en
                     cualquier momento del día o la noche, ya que contamos con
@@ -61,27 +76,11 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
                     su avería en todo momento, ya sea de la gravedad que sea.
                   </Text>
                 </Box>
-              </HStack>
-              <Phone />
-            </>
-          )}
-          {isMobile && (
-            <VStack>
-              <Box w="100%">
-                <Image src="/town.svg" alt={BusinessTitle} />
-              </Box>
-              <Box w="100%">
-                <Text variant="main_card_text" align="left">
-                  Prestamos servicio en {LocationServices}. Puede llamarnos en
-                  cualquier momento del día o la noche, ya que contamos con una
-                  amplia plantilla de cerrajeros dispuestos a solucionar su
-                  avería en todo momento, ya sea de la gravedad que sea.
-                </Text>
-              </Box>
-              <Phone />
-            </VStack>
-          )}
-        </Box>
+                <Phone />
+              </VStack>
+            )}
+          </Box>
+        </Flex>
       </Container>
       <Wrap justify="center" mt="5" mb="6" h="100%">
         {municipios.map((municipio, index) => (
@@ -89,6 +88,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
             w={["45%", "45%", "22%"]}
             boxShadow="dark-lg"
             padding={[1, 1, 2]}
+            rounded="lg"
             key={index}
           >
             <NextLink

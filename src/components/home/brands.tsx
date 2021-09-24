@@ -1,4 +1,4 @@
-import { Flex, VStack, Image, Text, Box } from "@chakra-ui/react";
+import { Flex, VStack, Image, Text } from "@chakra-ui/react";
 import { BusinessTitle } from "../../constants";
 
 export const Brands = (): JSX.Element => {

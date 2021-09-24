@@ -1,6 +1,5 @@
 import {
   Text,
-  Link,
   Container,
   Box,
   useBreakpointValue,
@@ -17,7 +16,7 @@ import { Cards } from "../../src/components/cards";
 
 import Head from "next/head";
 
-import { BusinessTitle, Telephone, TelephoneClick } from "../../src/constants";
+import { BusinessTitle } from "../../src/constants";
 
 import { Phone } from "../../src/components/phone";
 
@@ -42,7 +41,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
           align="center"
           py={["3", "3", "0"]}
           boxShadow="dark-lg"
-          rounded="md"
+          rounded="lg"
           mt={["3", "3", "0"]}
         >
           {!isMobile && (
@@ -145,6 +144,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding="2"
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Perdida de llaves:
@@ -164,6 +164,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding="2"
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Aperturas:
@@ -179,9 +180,9 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             align="left"
             py={["3", "3", "0"]}
             boxShadow="dark-lg"
-            mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding="2"
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Cambio de cerraduras:
@@ -202,6 +203,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding="2"
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Persianas de local y cierres:
@@ -221,6 +223,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding="2"
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Automatismos:
@@ -240,9 +243,9 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
             align="left"
             py={["3", "3", "0"]}
             boxShadow="dark-lg"
-            mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding="2"
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Persianas de hogar:

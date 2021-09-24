@@ -5,14 +5,14 @@ import {
   Box,
   useBreakpointValue,
   Image,
-  Link,
   HStack,
   VStack,
-  Text
+  Text,
+  Flex
 } from "@chakra-ui/react";
 
 import { Cards } from "../../src/components/cards";
-import { BusinessTitle, Telephone, TelephoneClick } from "../../src/constants";
+import { BusinessTitle } from "../../src/constants";
 import { Phone } from "../../src/components/phone";
 export const ContactPage: NextPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -25,67 +25,69 @@ export const ContactPage: NextPage = () => {
         <meta charSet="UTF-8" />
       </Head>
 
-      <Container maxWidth="container.xl" padding={[0, 0, 10]}>
-        <Box
-          w="full"
-          h="full"
-          align="center"
-          py={["3", "3", "0"]}
-          boxShadow="dark-lg"
-          rounded="md"
-          mt={["3", "3", "0"]}
-        >
-          {!isMobile && (
-            <>
-              <HStack p="12">
-                <Box w="45%">
-                  <Image src="/services2.svg" alt={BusinessTitle} />
-                </Box>
-                <Box w="55%">
-                  <Text variant="main_card_text" align="left">
-                    Entre los servicios que ofrecemos estan la instalación,
-                    reparación y sustitución de todo tipo de componentes de
-                    cerrajería así como; pomos, cerraduras, cerrojos o bombines
-                    en todas las puertas. ParaAdemas instalación de persianas
-                    metálicas de todas las medidas en su negocio o comercio,
-                    candados de suelo altamente resistentes, instalación de
-                    sofisticados sistemas de seguridad como anti-palanca o
-                    anti-pánico, amaestramiento y duplicado de llaves sencillas
-                    o forjadas, apertura de puertas de vehículo, puertas de
-                    garaje atascadas o candados de moto.
-                  </Text>
-                </Box>
-              </HStack>
-              <Phone />
-            </>
-          )}
+      <Container maxWidth="container.xl" padding={[0, 0, 6]}>
+        <Flex padding={[1, 1, 0]}>
+          <Box
+            w="full"
+            h="full"
+            align="center"
+            py={["3", "3", "0"]}
+            boxShadow="dark-lg"
+            rounded="lg"
+            mt={["3", "3", "0"]}
+          >
+            {!isMobile && (
+              <>
+                <HStack p="12">
+                  <Box w="45%">
+                    <Image src="/services2.svg" alt={BusinessTitle} />
+                  </Box>
+                  <Box w="55%">
+                    <Text variant="main_card_text" align="left">
+                      Entre los servicios que ofrecemos estan la instalación,
+                      reparación y sustitución de todo tipo de componentes de
+                      cerrajería así como; pomos, cerraduras, cerrojos o
+                      bombines en todas las puertas. ParaAdemas instalación de
+                      persianas metálicas de todas las medidas en su negocio o
+                      comercio, candados de suelo altamente resistentes,
+                      instalación de sofisticados sistemas de seguridad como
+                      anti-palanca o anti-pánico, amaestramiento y duplicado de
+                      llaves sencillas o forjadas, apertura de puertas de
+                      vehículo, puertas de garaje atascadas o candados de moto.
+                    </Text>
+                  </Box>
+                </HStack>
+                <Phone />
+              </>
+            )}
 
-          {isMobile && (
-            <VStack>
-              <Text variant="main_card_text">
-                Entre los servicios que ofrecemos estan la instalación,
-                reparación y sustitución de todo tipo de componentes de
-                cerrajería así como; pomos, cerraduras, cerrojos o bombines en
-                todas las puertas
-              </Text>
-              <Image
-                src="/services2.svg"
-                alt={BusinessTitle}
-                w="50%"
-                h="full"
-              />
-              <Text variant="main_card_text">
-                Ademas instalación de persianas metálicas de todas las medidas
-                en su negocio o comercio, candados de suelo altamente
-                resistentes, instalación de sofisticados sistemas de seguridad
-                como anti-palanca o anti-pánico, amaestramiento y duplicado de
-                llaves sencillas o forjadas, apertura de puertas de vehículo,
-                puertas de garaje atascadas o candados de moto.
-              </Text>
-              <Phone />
-            </VStack>
-          )}
-        </Box>
+            {isMobile && (
+              <VStack>
+                <Text variant="main_card_text">
+                  Entre los servicios que ofrecemos estan la instalación,
+                  reparación y sustitución de todo tipo de componentes de
+                  cerrajería así como; pomos, cerraduras, cerrojos o bombines en
+                  todas las puertas
+                </Text>
+                <Image
+                  src="/services2.svg"
+                  alt={BusinessTitle}
+                  w="50%"
+                  h="full"
+                />
+                <Text variant="main_card_text">
+                  Ademas instalación de persianas metálicas de todas las medidas
+                  en su negocio o comercio, candados de suelo altamente
+                  resistentes, instalación de sofisticados sistemas de seguridad
+                  como anti-palanca o anti-pánico, amaestramiento y duplicado de
+                  llaves sencillas o forjadas, apertura de puertas de vehículo,
+                  puertas de garaje atascadas o candados de moto.
+                </Text>
+                <Phone />
+              </VStack>
+            )}
+          </Box>
+        </Flex>
         <Cards>
           <Box
             w="full"
@@ -96,6 +98,7 @@ export const ContactPage: NextPage = () => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Perdida de llaves:
@@ -115,6 +118,7 @@ export const ContactPage: NextPage = () => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Aperturas:
@@ -133,6 +137,7 @@ export const ContactPage: NextPage = () => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Cambio de cerraduras:
@@ -152,6 +157,7 @@ export const ContactPage: NextPage = () => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Persianas de local y cierres:
@@ -170,6 +176,7 @@ export const ContactPage: NextPage = () => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Automatismos:
@@ -192,6 +199,7 @@ export const ContactPage: NextPage = () => {
             mr={["0", "0", "3"]}
             mt={["3", "3", "4"]}
             padding={[1, 1, 2]}
+            rounded="lg"
           >
             <Text variant="main_card_title" align="center">
               Persianas de hogar:

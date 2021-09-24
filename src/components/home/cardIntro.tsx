@@ -14,6 +14,7 @@ export const CardIntro = (): JSX.Element => {
       mr={["0", "0", "3"]}
       mt={["3", "3", "14"]}
       padding={[1, 1, 2]}
+      rounded="lg"
     >
       <HStack>
         <Box w="65%">

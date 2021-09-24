@@ -1,11 +1,4 @@
-import {
-  useBreakpointValue,
-  Box,
-  HStack,
-  Text,
-  Image,
-  Link
-} from "@chakra-ui/react";
+import { useBreakpointValue, Box, HStack, Image, Link } from "@chakra-ui/react";
 
 import {
   BusinessTitle,

@@ -1,12 +1,4 @@
-import {
-  useBreakpointValue,
-  Box,
-  HStack,
-  Text,
-  Image,
-  VStack,
-  Link
-} from "@chakra-ui/react";
+import { Box, HStack, Text, Image, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 import { BusinessTitle } from "../../constants";
@@ -23,6 +15,7 @@ export const CardCall = (): JSX.Element => {
       ml={["0", "0", "3"]}
       mt={["3", "3", "0"]}
       padding={[1, 1, 2]}
+      rounded="lg"
     >
       <HStack>
         <Image src="/phone.svg" alt={BusinessTitle} w="50%" h="full" />
