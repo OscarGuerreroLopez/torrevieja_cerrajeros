@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 import Head from "next/head";
 
-import { BusinessTitle } from "../src/constants";
+import { BusinessTitle, Telephone } from "../src/constants";
 
 import {
   Brands,
@@ -19,7 +19,7 @@ const IndexPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{BusinessTitle}</title>
+        <title>{`${BusinessTitle} 24H. Telf: ${Telephone}`}</title>
         <meta
           name="description"
           content={`${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}

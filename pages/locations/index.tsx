@@ -15,7 +15,11 @@ import {
 
 import municipioList from "../../lib/municipios.json";
 import NextLink from "next/link";
-import { BusinessTitle, LocationServices } from "../../src/constants";
+import {
+  BusinessTitle,
+  LocationServices,
+  Telephone
+} from "../../src/constants";
 
 import { Phone } from "../../src/components/phone";
 
@@ -26,8 +30,13 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
   return (
     <>
       <Head>
-        <title>Servicios cerrajeria Alicante</title>
-        <meta name="description" content="Servicios cerrajeria en Alicante" />
+        <title>
+          {`Servicios cerrajeria Alicante. 24H Telf: ${Telephone}. Vega Baja`}{" "}
+        </title>
+        <meta
+          name="description"
+          content="Servicios cerrajeria en Alicante, Vega Baja, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras"
+        />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
       </Head>

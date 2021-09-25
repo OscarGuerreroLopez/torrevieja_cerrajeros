@@ -12,15 +12,18 @@ import {
 } from "@chakra-ui/react";
 
 import { Cards } from "../../src/components/cards";
-import { BusinessTitle } from "../../src/constants";
+import { BusinessTitle, Telephone } from "../../src/constants";
 import { Phone } from "../../src/components/phone";
 export const ContactPage: NextPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
       <Head>
-        <title>Servicios cerrajeria provincia Alicante</title>
-        <meta name="description" content="Servicios cerrajeria" />
+        <title>{`${BusinessTitle} 24H. Telf: ${Telephone} . Vega Baja`}</title>
+        <meta
+          name="description"
+          content="Servicios cerrajeria, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras"
+        />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
       </Head>

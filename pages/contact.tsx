@@ -17,14 +17,14 @@ import { Cards } from "../src/components/cards";
 
 import { Phone } from "../src/components/phone";
 
-import { BusinessTitle, LocationServices } from "../src/constants";
+import { BusinessTitle, LocationServices, Telephone } from "../src/constants";
 
 const ContactPage: NextPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
       <Head>
-        <title>{BusinessTitle}</title>
+        <title>{`${BusinessTitle} 24H. Telf: ${Telephone}`}</title>
         <meta name="description" content={BusinessTitle} />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />

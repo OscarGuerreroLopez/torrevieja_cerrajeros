@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 
-import { BusinessTitle } from "../src/constants";
+import { BusinessTitle, Telephone } from "../src/constants";
 import { Phone } from "../src/components/phone";
 import { Cards } from "../src/components/cards";
 
@@ -22,7 +22,7 @@ const AboutPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{BusinessTitle}</title>
+        <title>{`${BusinessTitle} 24H. Telf: ${Telephone}`}</title>
         <meta name="description" content={BusinessTitle} />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />

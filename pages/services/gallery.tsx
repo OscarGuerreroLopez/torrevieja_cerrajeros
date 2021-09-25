@@ -5,14 +5,17 @@ import { Container, Box, Image, HStack, Wrap, Text } from "@chakra-ui/react";
 
 import { Phone } from "../../src/components/phone";
 
-import { BusinessTitle, Photos } from "../../src/constants";
+import { BusinessTitle, Photos, Telephone } from "../../src/constants";
 
 export const GalleryPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{BusinessTitle}</title>
-        <meta name="description" content={`${BusinessTitle} galeria`} />
+        <title>{`${BusinessTitle} 24H. Telf: ${Telephone}`}</title>
+        <meta
+          name="description"
+          content={`${BusinessTitle} galeria, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
+        />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
       </Head>
