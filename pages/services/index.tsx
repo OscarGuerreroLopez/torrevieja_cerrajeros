@@ -14,6 +14,7 @@ import {
 import { Cards } from "../../src/components/cards";
 import { BusinessTitle, Telephone } from "../../src/constants";
 import { Phone } from "../../src/components/phone";
+import { Brands } from "../../src/components/home";
 export const ContactPage: NextPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   return (
@@ -213,6 +214,7 @@ export const ContactPage: NextPage = () => {
           </Box>
         </Cards>
       </Container>
+      <Brands />
     </>
   );
 };

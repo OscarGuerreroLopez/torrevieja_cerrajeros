@@ -5,10 +5,10 @@ import Head from "next/head";
 import { BusinessTitle, Telephone } from "../src/constants";
 
 import {
-  Brands,
   CardIntro,
   CardServicios,
-  CardCall
+  CardCall,
+  CardCobertura
 } from "../src/components/home";
 
 import { Cards } from "../src/components/cards";
@@ -34,9 +34,12 @@ const IndexPage: NextPage = () => {
         <CardIntro />
         <CardServicios />
       </Cards>
-      <Brands />
+
       <Cards>
         <CardCall />
+      </Cards>
+      <Cards>
+        <CardCobertura />
       </Cards>
     </>
   );
