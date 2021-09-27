@@ -59,6 +59,16 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                     <Text variant="main_card_title">
                       Cerrajeros en {props.municipio}
                     </Text>
+
+                    <Box w="100%" align="center">
+                      <Image
+                        src="/24hours4.png"
+                        alt={BusinessTitle}
+                        w={["100%", "90%", "50%"]}
+                      />
+                    </Box>
+
+                    <Phone />
                     <Text variant="main_card_text" align="left">
                       Entre los servicios que ofrecemos para la poblacion de{" "}
                       {props.municipio} estan la instalación, reparación y
@@ -74,7 +84,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                     </Text>
                   </Box>
                 </HStack>
-                <Phone />
+
                 <HStack p="12">
                   <Box w="55%">
                     <Text variant="main_card_text" align="left">
@@ -88,6 +98,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                       servicio, los mejores precios y la máxima entrega es
                       primordial en nuestra empresa.
                     </Text>
+                    <Phone />
                   </Box>
                   <Box w="45%">
                     <Image src="/phone2.svg" alt={BusinessTitle} />
@@ -102,6 +113,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                   <Text variant="main_card_title">
                     Cerrajeros en {props.municipio}
                   </Text>
+                  <Phone />
                   <Text variant="main_card_text">
                     Entre los servicios que ofrecemos para la poblacion de{" "}
                     {props.municipio} estan la instalación, reparación y
@@ -124,7 +136,6 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                     puertas de vehículo, puertas de garaje atascadas o candados
                     de moto.
                   </Text>
-                  <Phone />
                 </VStack>
                 <VStack mt="5" px="2">
                   <Text variant="main_card_text">
@@ -146,6 +157,7 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
                     posible. El mejor servicio, los mejores precios y la máxima
                     entrega es primordial en nuestra empresa.
                   </Text>
+                  <Phone />
                 </VStack>
               </>
             )}

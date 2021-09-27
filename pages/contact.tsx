@@ -6,7 +6,6 @@ import {
   Box,
   useBreakpointValue,
   Image,
-  Link,
   HStack,
   VStack,
   Text,
@@ -106,7 +105,7 @@ const ContactPage: NextPage = () => {
                   sobre las localidades que trabajamos en:
                 </Text>
                 <Box align="center">
-                  <Link variant="link_blue">....Cobertura</Link>
+                  <Text variant="crawlable_link">....Cobertura</Text>
                 </Box>
               </Box>
               <Box w="35%">
@@ -135,7 +134,7 @@ const ContactPage: NextPage = () => {
                   Puede ver tambien imagenes de nuestros trabajos en:
                 </Text>
                 <Box align="center">
-                  <Link variant="link_blue">....Galeria</Link>
+                  <Text variant="crawlable_link">....Galeria</Text>
                 </Box>
               </Box>
             </HStack>

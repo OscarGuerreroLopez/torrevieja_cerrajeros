@@ -1,4 +1,4 @@
-import { Box, HStack, Text, Image, Link } from "@chakra-ui/react";
+import { Box, HStack, Text, Image } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 import { BusinessTitle } from "../../constants";
@@ -27,7 +27,7 @@ export const CardServicios = (): JSX.Element => {
       <NextLink href="/services">
         <Box>
           <Box align="left">
-            <Link variant="link_blue">....mas sobre servicios</Link>
+            <Text variant="crawlable_link">....mas sobre servicios</Text>
           </Box>
         </Box>
       </NextLink>

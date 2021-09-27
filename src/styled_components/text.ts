@@ -54,6 +54,16 @@ export const TextStyles = {
         textDecoration: "none",
         cursor: "pointer"
       }
+    }),
+    crawlable_link: (props: Dict<unknown> | StyleFunctionProps): unknown => ({
+      fontSize: [16, 16, 20, 25],
+      color: mode(whiten("blue.700", 20), darken("blue.500", 20))(props),
+      fontFamily: "Ultra",
+      _hover: {
+        transform: "scale(1.20)",
+        textDecoration: "none",
+        cursor: "pointer"
+      }
     })
   },
   // default values for `size` and `variant`
