@@ -1,4 +1,4 @@
-import { Box, HStack, Text, Image, Link } from "@chakra-ui/react";
+import { Box, Text, Image, Link, VStack } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 import { BusinessTitle } from "../../constants";
@@ -15,14 +15,16 @@ export const CardCall = (): JSX.Element => {
       padding={[1, 1, 2]}
       rounded="lg"
     >
-      <HStack>
+      <VStack>
+        <Text variant="main_card_title">
+          Puede llamarnos en cualquier momento del día o la noche
+        </Text>
         <Image src="/phone.svg" alt={BusinessTitle} w="50%" h="full" />
         <Text variant="main_card_text">
-          Puede llamarnos en cualquier momento del día o la noche, ya que
-          contamos con una amplia plantilla de cerrajeros dispuestos a
+          Contamos con una amplia plantilla de cerrajeros dispuestos a
           solucionar su avería en todo momento, ya sea de la gravedad que sea.
         </Text>
-      </HStack>
+      </VStack>
       <NextLink href="/contact">
         <Box>
           <Box align="center">
