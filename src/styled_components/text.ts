@@ -60,7 +60,6 @@ export const TextStyles = {
       color: mode(whiten("blue.700", 20), darken("blue.500", 20))(props),
       fontFamily: "Ultra",
       _hover: {
-        transform: "scale(1.20)",
         textDecoration: "none",
         cursor: "pointer"
       }
