@@ -76,7 +76,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
                 <Box>
                   <Image src="/town.svg" alt={BusinessTitle} />
                 </Box>
-                <Box>
+                <Box p="1">
                   <Text variant="main_card_text" align="left">
                     Prestamos servicio en {LocationServices}. Puede llamarnos en
                     cualquier momento del día o la noche, ya que contamos con
@@ -91,7 +91,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
         </Flex>
       </Container>
 
-      <Wrap justify="center" mt="5" mb="6" h="100%" w="100%">
+      <Wrap justify="center" mt="5" mb="6" h="100%" m="3">
         {municipios.map((municipio, index) => (
           <Box
             w={["45%", "45%", "22%"]}
