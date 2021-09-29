@@ -8,12 +8,13 @@ import {
   CardIntro,
   CardServicios,
   CardCall,
-  CardCobertura
+  CardCobertura,
+  MainHome
 } from "../src/components/home";
 
 import { Cards } from "../src/components/cards";
 
-import { MainHome } from "../src/components/home/main";
+import { LargeWrapper } from "../src/components/largeWrapper";
 
 const IndexPage: NextPage = () => {
   return (
@@ -29,18 +30,19 @@ const IndexPage: NextPage = () => {
       </Head>
 
       <MainHome />
+      <LargeWrapper>
+        <Cards>
+          <CardIntro />
+          <CardServicios />
+        </Cards>
 
-      <Cards>
-        <CardIntro />
-        <CardServicios />
-      </Cards>
-
-      <Cards>
-        <CardCall />
-      </Cards>
-      <Cards>
-        <CardCobertura />
-      </Cards>
+        <Cards>
+          <CardCall />
+        </Cards>
+        <Cards>
+          <CardCobertura />
+        </Cards>
+      </LargeWrapper>
     </>
   );
 };

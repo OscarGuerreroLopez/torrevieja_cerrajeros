@@ -15,6 +15,7 @@ import Head from "next/head";
 import { BusinessTitle, Telephone } from "../src/constants";
 import { Phone } from "../src/components/phone";
 import { Cards } from "../src/components/cards";
+import { LargeWrapper } from "../src/components/largeWrapper";
 
 const AboutPage: NextPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -85,60 +86,62 @@ const AboutPage: NextPage = () => {
           </Box>
         </Flex>
       </Container>
-      <Cards>
-        <Box
-          w="full"
-          h="full"
-          py={["3", "3", "0"]}
-          boxShadow="dark-lg"
-          mr={["0", "0", "3"]}
-          mt={["4", "4", "0"]}
-          padding={[1, 1, 2]}
-          rounded="lg"
-        >
-          <Text variant="main_card_title" align="center">
-            ¿Que ofrecemos?
-          </Text>
-          <NextLink href="/locations">
-            <HStack>
-              <Box>
-                <Text variant="main_card_text">
-                  Ofrecemos todo tipo de servicios relacionados con cerrajería:
-                  cerraduras de alta seguridad, apertura urgente, instalación y
-                  mantenimiento de automatismos, carpintería metálica, vallados
-                  y cerramientos… Trabajamos tanto para comunidades como para
-                  aseguradoras o particulares.
-                </Text>
-              </Box>
-            </HStack>
-          </NextLink>
-        </Box>
-        <Box
-          w="full"
-          h="full"
-          py={["3", "3", "0"]}
-          boxShadow="dark-lg"
-          mt={["4", "4", "0"]}
-          padding={[1, 1, 2]}
-          rounded="lg"
-        >
-          <Text variant="main_card_title" align="center">
-            ¿Por que confiar en nosotros?
-          </Text>
-          <NextLink href="/locations">
-            <HStack>
-              <Box>
-                <Text variant="main_card_text">
-                  Contamos con mas de 10 años de experiencia en el sector.
-                  Tenemos el objetivo de conseguir la confianza de nuestros
-                  clientes, ofreciendo un servicio de alta calidad y a un precio
-                  justo.
-                </Text>
-              </Box>
-            </HStack>
-          </NextLink>
-        </Box>
-      </Cards>
+      <LargeWrapper>
+        <Cards>
+          <Box
+            w="full"
+            h="full"
+            py={["3", "3", "0"]}
+            boxShadow="dark-lg"
+            mr={["0", "0", "3"]}
+            mt={["4", "4", "0"]}
+            padding={[1, 1, 2]}
+            rounded="lg"
+          >
+            <Text variant="main_card_title" align="center">
+              ¿Que ofrecemos?
+            </Text>
+            <NextLink href="/locations">
+              <HStack>
+                <Box>
+                  <Text variant="main_card_text">
+                    Ofrecemos todo tipo de servicios relacionados con
+                    cerrajería: cerraduras de alta seguridad, apertura urgente,
+                    instalación y mantenimiento de automatismos, carpintería
+                    metálica, vallados y cerramientos… Trabajamos tanto para
+                    comunidades como para aseguradoras o particulares.
+                  </Text>
+                </Box>
+              </HStack>
+            </NextLink>
+          </Box>
+          <Box
+            w="full"
+            h="full"
+            py={["3", "3", "0"]}
+            boxShadow="dark-lg"
+            mt={["4", "4", "0"]}
+            padding={[1, 1, 2]}
+            rounded="lg"
+          >
+            <Text variant="main_card_title" align="center">
+              ¿Por que confiar en nosotros?
+            </Text>
+            <NextLink href="/locations">
+              <HStack>
+                <Box>
+                  <Text variant="main_card_text">
+                    Contamos con mas de 10 años de experiencia en el sector.
+                    Tenemos el objetivo de conseguir la confianza de nuestros
+                    clientes, ofreciendo un servicio de alta calidad y a un
+                    precio justo.
+                  </Text>
+                </Box>
+              </HStack>
+            </NextLink>
+          </Box>
+        </Cards>
+      </LargeWrapper>
       <Container maxWidth="container.xl" padding={[0, 0, 10]}>
         <Flex padding={[1, 1, 0]}>
           <Box

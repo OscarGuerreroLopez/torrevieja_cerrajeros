@@ -15,6 +15,7 @@ import {
 import { Cards } from "../src/components/cards";
 
 import { Phone } from "../src/components/phone";
+import { LargeWrapper } from "../src/components/largeWrapper";
 
 import { BusinessTitle, LocationServices, Telephone } from "../src/constants";
 
@@ -86,61 +87,63 @@ const ContactPage: NextPage = () => {
           </Box>
         </Flex>
       </Container>
-      <Cards>
-        <Box
-          w="full"
-          h="full"
-          align="left"
-          boxShadow="dark-lg"
-          mr={["0", "0", "3"]}
-          mt={["4", "3", "2"]}
-          padding={[1, 1, 2]}
-          rounded="lg"
-        >
-          <NextLink href="/locations">
-            <HStack>
-              <Box w="65%">
-                <Text variant="main_card_text">
-                  Prestamos servicio en {LocationServices}. Mas informacion
-                  sobre las localidades que trabajamos en:
-                </Text>
-                <Box align="center">
-                  <Text variant="crawlable_link">....Cobertura</Text>
+      <LargeWrapper>
+        <Cards>
+          <Box
+            w="full"
+            h="full"
+            align="left"
+            boxShadow="dark-lg"
+            mr={["0", "0", "3"]}
+            mt={["4", "3", "2"]}
+            padding={[1, 1, 2]}
+            rounded="lg"
+          >
+            <NextLink href="/locations">
+              <HStack>
+                <Box w="65%">
+                  <Text variant="main_card_text">
+                    Prestamos servicio en {LocationServices}. Mas informacion
+                    sobre las localidades que trabajamos en:
+                  </Text>
+                  <Box align="center">
+                    <Text variant="crawlable_link">....Cobertura</Text>
+                  </Box>
                 </Box>
-              </Box>
-              <Box w="35%">
-                <Image src="/car1.svg" alt={BusinessTitle} />
-              </Box>
-            </HStack>
-          </NextLink>
-        </Box>
-        <Box
-          w="full"
-          h="full"
-          align="left"
-          boxShadow="dark-lg"
-          mr={["0", "0", "3"]}
-          mt={["4", "3", "2"]}
-          padding={[1, 1, 2]}
-          rounded="lg"
-        >
-          <NextLink href="/services/gallery">
-            <HStack>
-              <Box w="35%">
-                <Image src="/worker.svg" alt={BusinessTitle} />
-              </Box>
-              <Box w="65%">
-                <Text variant="main_card_text">
-                  Puede ver tambien imagenes de nuestros trabajos en:
-                </Text>
-                <Box align="center">
-                  <Text variant="crawlable_link">....Galeria</Text>
+                <Box w="35%">
+                  <Image src="/car1.svg" alt={BusinessTitle} />
                 </Box>
-              </Box>
-            </HStack>
-          </NextLink>
-        </Box>
-      </Cards>
+              </HStack>
+            </NextLink>
+          </Box>
+          <Box
+            w="full"
+            h="full"
+            align="left"
+            boxShadow="dark-lg"
+            mr={["0", "0", "3"]}
+            mt={["4", "3", "2"]}
+            padding={[1, 1, 2]}
+            rounded="lg"
+          >
+            <NextLink href="/services/gallery">
+              <HStack>
+                <Box w="35%">
+                  <Image src="/worker.svg" alt={BusinessTitle} />
+                </Box>
+                <Box w="65%">
+                  <Text variant="main_card_text">
+                    Puede ver tambien imagenes de nuestros trabajos en:
+                  </Text>
+                  <Box align="center">
+                    <Text variant="crawlable_link">....Galeria</Text>
+                  </Box>
+                </Box>
+              </HStack>
+            </NextLink>
+          </Box>
+        </Cards>
+      </LargeWrapper>
     </>
   );
 };

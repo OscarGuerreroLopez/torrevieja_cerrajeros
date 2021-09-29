@@ -20,6 +20,7 @@ import {
   LocationServices,
   Telephone
 } from "../../src/constants";
+import { LargeWrapper } from "../../src/components/largeWrapper";
 
 import { Phone } from "../../src/components/phone";
 
@@ -90,31 +91,32 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
           </Box>
         </Flex>
       </Container>
-
-      <Wrap justify="center" mt="5" mb="6" h="100%" m="3">
-        {municipios.map((municipio, index) => (
-          <Box
-            w={["45%", "45%", "22%"]}
-            boxShadow="dark-lg"
-            padding={[1, 1, 2]}
-            rounded="lg"
-            key={index}
-          >
-            <NextLink
-              as={`/locations/${municipio}`}
-              href={`/locations/[municipio]`}
-              passHref
-              key={`/locations/${municipio}`}
+      <LargeWrapper>
+        <Wrap justify="center" mt="5" mb="6" h="100%" m={["2", "2", "4", "0"]}>
+          {municipios.map((municipio, index) => (
+            <Box
+              w={["45%", "45%", "22%"]}
+              boxShadow="dark-lg"
+              padding={[1, 1, 2]}
+              rounded="lg"
+              key={index}
             >
-              <Link key={index}>
-                <Text variant="main_card_title" align="center">
-                  {municipio}
-                </Text>
-              </Link>
-            </NextLink>
-          </Box>
-        ))}
-      </Wrap>
+              <NextLink
+                as={`/locations/${municipio}`}
+                href={`/locations/[municipio]`}
+                passHref
+                key={`/locations/${municipio}`}
+              >
+                <Link key={index}>
+                  <Text variant="main_card_title" align="center">
+                    {municipio}
+                  </Text>
+                </Link>
+              </NextLink>
+            </Box>
+          ))}
+        </Wrap>
+      </LargeWrapper>
     </>
   );
 };
