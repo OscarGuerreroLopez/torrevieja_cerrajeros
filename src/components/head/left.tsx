@@ -10,7 +10,7 @@ export const LeftHeader = (): JSX.Element => {
         {" "}
         <Box w="full" align="left" ml={["0", "0", "1", "4", "7"]}>
           <NextLink href="/">
-            <Link>
+            <Link variant="header_link">
               <Text variant="title">{BusinessTitle}</Text>
             </Link>
           </NextLink>

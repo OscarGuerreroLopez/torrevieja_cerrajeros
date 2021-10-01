@@ -107,7 +107,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
                 passHref
                 key={`/locations/${municipio}`}
               >
-                <Link key={index}>
+                <Link variant="header_link" key={index}>
                   <Text variant="main_card_title" align="center">
                     {municipio}
                   </Text>
