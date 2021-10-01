@@ -4,7 +4,7 @@ import { LeftHeader } from "./left";
 import { RightHeader } from "./right";
 
 const Header = (): JSX.Element => {
-  const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
+  const bgColor = useColorModeValue("white", "gray.800");
 
   return (
     <Stack
