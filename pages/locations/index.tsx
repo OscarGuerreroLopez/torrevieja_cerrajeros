@@ -1,7 +1,6 @@
 import { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import {
-  Container,
   Box,
   useBreakpointValue,
   Image,
@@ -9,8 +8,7 @@ import {
   HStack,
   VStack,
   Text,
-  Wrap,
-  Flex
+  Wrap
 } from "@chakra-ui/react";
 
 import municipioList from "../../lib/municipios.json";
@@ -23,6 +21,7 @@ import {
 import { LargeWrapper } from "../../src/components/largeWrapper";
 
 import { Phone } from "../../src/components/phone";
+import { MainCard } from "../../src/components/mainCard";
 
 export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -42,62 +41,49 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
         <meta charSet="UTF-8" />
       </Head>
 
-      <Container maxWidth="container.xl" padding={[0, 0, 6]}>
-        <Flex padding={[1, 1, 0]}>
-          <Box
-            w="full"
-            h="full"
-            align="center"
-            py={["3", "3", "0"]}
-            boxShadow="dark-lg"
-            rounded="lg"
-            mt={["3", "3", "0"]}
-          >
-            {!isMobile && (
-              <>
-                <HStack p="12">
-                  <Box w="45%">
-                    <Image src="/town.svg" alt={BusinessTitle} />
-                  </Box>
-                  <Box w="55%">
-                    <Text variant="main_card_text" align="left">
-                      Prestamos servicio en {LocationServices}. Puede llamarnos
-                      en cualquier momento del día o la noche, ya que contamos
-                      con una amplia plantilla de cerrajeros dispuestos a
-                      solucionar su avería en todo momento, ya sea de la
-                      gravedad que sea.
-                    </Text>
-                  </Box>
-                </HStack>
-                <Phone />
-              </>
-            )}
-            {isMobile && (
-              <VStack>
-                <Box>
-                  <Image src="/town.svg" alt={BusinessTitle} />
-                </Box>
-                <Box p="1">
-                  <Text variant="main_card_text" align="left">
-                    Prestamos servicio en {LocationServices}. Puede llamarnos en
-                    cualquier momento del día o la noche, ya que contamos con
-                    una amplia plantilla de cerrajeros dispuestos a solucionar
-                    su avería en todo momento, ya sea de la gravedad que sea.
-                  </Text>
-                </Box>
-                <Phone />
-              </VStack>
-            )}
-          </Box>
-        </Flex>
-      </Container>
+      <MainCard>
+        {!isMobile && (
+          <>
+            <HStack p="12">
+              <Box w="45%">
+                <Image src="/town.svg" alt={BusinessTitle} />
+              </Box>
+              <Box w="55%">
+                <Text variant="main_card_text" align="left">
+                  Prestamos servicio en {LocationServices}. Puede llamarnos en
+                  cualquier momento del día o la noche, ya que contamos con una
+                  amplia plantilla de cerrajeros dispuestos a solucionar su
+                  avería en todo momento, ya sea de la gravedad que sea.
+                </Text>
+              </Box>
+            </HStack>
+            <Phone />
+          </>
+        )}
+        {isMobile && (
+          <VStack>
+            <Box>
+              <Image src="/town.svg" alt={BusinessTitle} />
+            </Box>
+            <Box p="1">
+              <Text variant="main_card_text" align="left">
+                Prestamos servicio en {LocationServices}. Puede llamarnos en
+                cualquier momento del día o la noche, ya que contamos con una
+                amplia plantilla de cerrajeros dispuestos a solucionar su avería
+                en todo momento, ya sea de la gravedad que sea.
+              </Text>
+            </Box>
+            <Phone />
+          </VStack>
+        )}
+      </MainCard>
       <LargeWrapper>
-        <Wrap justify="center" mt="5" mb="6" h="100%" m={["2", "2", "4", "0"]}>
+        <Wrap justify="center" py="5" m={["3", "3", "0"]}>
           {municipios.map((municipio, index) => (
             <Box
               w={["45%", "45%", "22%"]}
               boxShadow="dark-lg"
-              padding={[1, 1, 2]}
+              padding="2"
               rounded="lg"
               key={index}
             >

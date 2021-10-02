@@ -2,22 +2,22 @@ import { NextPage } from "next";
 import NextLink from "next/link";
 import Head from "next/head";
 import {
-  Container,
   Box,
   useBreakpointValue,
   Image,
   HStack,
   VStack,
-  Text,
-  Flex
+  Text
 } from "@chakra-ui/react";
 
 import { Cards } from "../src/components/cards";
 
 import { Phone } from "../src/components/phone";
+import { MainCard } from "../src/components/mainCard";
 import { LargeWrapper } from "../src/components/largeWrapper";
 
 import { BusinessTitle, LocationServices, Telephone } from "../src/constants";
+import React from "react";
 
 const ContactPage: NextPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -30,72 +30,60 @@ const ContactPage: NextPage = () => {
         <meta charSet="UTF-8" />
       </Head>
 
-      <Container maxWidth="container.xl" padding={[0, 0, 10]}>
-        <Flex padding={[1, 1, 0]}>
-          <Box
-            w="full"
-            h="full"
-            align="center"
-            py={[3, 3, 1]}
-            boxShadow="dark-lg"
-            rounded="lg"
-            mt={["3", "3", "0"]}
-          >
-            {!isMobile && (
-              <>
-                <HStack p="12">
-                  <Box w="55%">
-                    <Text variant="main_card_text" align="left">
-                      Puede llamarnos en cualquier momento del día o la noche,
-                      ya que contamos con una amplia plantilla de cerrajeros
-                      dispuestos a solucionar su avería en todo momento, ya sea
-                      de la gravedad que sea. Para ello, tan solo debe de
-                      ponerse en contacto a través de nuestro número de teléfono
-                      y le enviaremos a uno de nuestros cerrajeros urgentes
-                      donde nos indique con la mayor rapidez posible. El mejor
-                      servicio, los mejores precios y la máxima entrega es
-                      primordial en nuestra empresa.
-                    </Text>
-                  </Box>
-                  <Box w="45%">
-                    <Image src="/phone2.svg" alt={BusinessTitle} />
-                  </Box>
-                </HStack>
-                <Phone />
-              </>
-            )}
-
-            {isMobile && (
-              <VStack>
-                <Text variant="main_card_text">
+      <MainCard>
+        {!isMobile && (
+          <>
+            <HStack p="12">
+              <Box w="55%">
+                <Text variant="main_card_text" align="left">
                   Puede llamarnos en cualquier momento del día o la noche, ya
                   que contamos con una amplia plantilla de cerrajeros dispuestos
                   a solucionar su avería en todo momento, ya sea de la gravedad
-                  que sea.
+                  que sea. Para ello, tan solo debe de ponerse en contacto a
+                  través de nuestro número de teléfono y le enviaremos a uno de
+                  nuestros cerrajeros urgentes donde nos indique con la mayor
+                  rapidez posible. El mejor servicio, los mejores precios y la
+                  máxima entrega es primordial en nuestra empresa.
                 </Text>
-                <Image src="/phone2.svg" alt={BusinessTitle} w="50%" h="full" />
-                <Text variant="main_card_text">
-                  Para ello, tan solo debe de ponerse en contacto a través de
-                  nuestro número de teléfono y le enviaremos a uno de nuestros
-                  cerrajeros urgentes donde nos indique con la mayor rapidez
-                  posible. El mejor servicio, los mejores precios y la máxima
-                  entrega es primordial en nuestra empresa.
-                </Text>
-                <Phone />
-              </VStack>
-            )}
-          </Box>
-        </Flex>
-      </Container>
+              </Box>
+              <Box w="45%">
+                <Image src="/phone2.svg" alt={BusinessTitle} />
+              </Box>
+            </HStack>
+            <Phone />
+          </>
+        )}
+
+        {isMobile && (
+          <VStack>
+            <Text variant="main_card_text">
+              Puede llamarnos en cualquier momento del día o la noche, ya que
+              contamos con una amplia plantilla de cerrajeros dispuestos a
+              solucionar su avería en todo momento, ya sea de la gravedad que
+              sea.
+            </Text>
+            <Image src="/phone2.svg" alt={BusinessTitle} w="50%" h="full" />
+            <Text variant="main_card_text">
+              Para ello, tan solo debe de ponerse en contacto a través de
+              nuestro número de teléfono y le enviaremos a uno de nuestros
+              cerrajeros urgentes donde nos indique con la mayor rapidez
+              posible. El mejor servicio, los mejores precios y la máxima
+              entrega es primordial en nuestra empresa.
+            </Text>
+            <Phone />
+          </VStack>
+        )}
+      </MainCard>
       <LargeWrapper>
         <Cards>
           <Box
             w="full"
             h="full"
             align="left"
+            py={["3", "3", "0"]}
             boxShadow="dark-lg"
             mr={["0", "0", "3"]}
-            mt={["4", "3", "2"]}
+            mt={["5", "5", "8"]}
             padding={[1, 1, 2]}
             rounded="lg"
           >
@@ -120,9 +108,9 @@ const ContactPage: NextPage = () => {
             w="full"
             h="full"
             align="left"
+            py={["3", "3", "0"]}
             boxShadow="dark-lg"
-            mr={["0", "0", "3"]}
-            mt={["4", "3", "2"]}
+            mt={["5", "5", "8"]}
             padding={[1, 1, 2]}
             rounded="lg"
           >

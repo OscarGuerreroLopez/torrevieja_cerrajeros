@@ -12,7 +12,7 @@ export const CardServicios = (): JSX.Element => {
       py={["3", "3", "0"]}
       boxShadow="dark-lg"
       ml={["0", "0", "3"]}
-      mt={["3", "3", "0"]}
+      mt="3"
       padding={[1, 1, 2]}
       rounded="lg"
     >

@@ -29,62 +29,59 @@ const AboutPage: NextPage = () => {
         <meta charSet="UTF-8" />
       </Head>
 
-      <Container maxWidth="container.xl" padding={[0, 0, 10]}>
-        <Flex padding={[1, 1, 0]}>
-          <Box
-            w="full"
-            h="full"
-            align="center"
-            py={["3", "3", "0"]}
-            boxShadow="dark-lg"
-            rounded="lg"
-            mt={["5", "5", "0"]}
-          >
-            {!isMobile && (
-              <>
-                <HStack p="12">
-                  <Box w="55%">
-                    <Text variant="main_card_title">¿Quienes somos?</Text>
-                    <Text variant="main_card_text" align="left">
-                      Contamos con más de 10 años de experiencia ofreciendo un
-                      servicio de calidad, siempre preocupados por satisfacer
-                      las necesidades de nuestros clientes. Para nosostros es
-                      importante que nuestros clientes tengan la seguridad y
-                      tranquilidad de que nuestro servicio es oportuno, ético y
-                      profesional. Este mismo servicio que nos ha caracterizado
-                      hasta ahora, lo proporcionamos al atender emergencias las
-                      24 horas.
-                    </Text>
-                  </Box>
-                  <Box w="45%">
-                    <Image src="/team2.svg" alt={BusinessTitle} />
-                  </Box>
-                </HStack>
-                <Phone />
-              </>
-            )}
+      <Container maxWidth="container.xl" px={[1, 1, 10]}>
+        <Box
+          w="full"
+          h="full"
+          align="center"
+          py={[3, 3, 1]}
+          boxShadow="dark-lg"
+          rounded="lg"
+        >
+          {!isMobile && (
+            <>
+              <HStack p="12">
+                <Box w="55%">
+                  <Text variant="main_card_title">¿Quienes somos?</Text>
+                  <Text variant="main_card_text" align="left">
+                    Contamos con más de 10 años de experiencia ofreciendo un
+                    servicio de calidad, siempre preocupados por satisfacer las
+                    necesidades de nuestros clientes. Para nosostros es
+                    importante que nuestros clientes tengan la seguridad y
+                    tranquilidad de que nuestro servicio es oportuno, ético y
+                    profesional. Este mismo servicio que nos ha caracterizado
+                    hasta ahora, lo proporcionamos al atender emergencias las 24
+                    horas.
+                  </Text>
+                </Box>
+                <Box w="45%">
+                  <Image src="/team2.svg" alt={BusinessTitle} />
+                </Box>
+              </HStack>
+              <Phone />
+            </>
+          )}
 
-            {isMobile && (
-              <VStack>
-                <Text variant="main_card_title">¿Quienes somos?</Text>
-                <Text variant="main_card_text">
-                  Contamos con más de 10 años de experiencia ofreciendo un
-                  servicio de calidad, siempre preocupados por satisfacer las
-                  necesidades de nuestros clientes.
-                </Text>
-                <Image src="/team2.svg" alt={BusinessTitle} w="50%" h="full" />
-                <Text variant="main_card_text">
-                  Para nosostros es importante que nuestros clientes tengan la
-                  seguridad y tranquilidad de que nuestro servicio es oportuno,
-                  ético y profesional. Este mismo servicio que nos ha
-                  caracterizado hasta ahora, lo proporcionamos al atender
-                  emergencias las 24 horas.
-                </Text>
-                <Phone />
-              </VStack>
-            )}
-          </Box>
-        </Flex>
+          {isMobile && (
+            <VStack>
+              <Text variant="main_card_title">¿Quienes somos?</Text>
+              <Text variant="main_card_text">
+                Contamos con más de 10 años de experiencia ofreciendo un
+                servicio de calidad, siempre preocupados por satisfacer las
+                necesidades de nuestros clientes.
+              </Text>
+              <Image src="/team2.svg" alt={BusinessTitle} w="50%" h="full" />
+              <Text variant="main_card_text">
+                Para nosostros es importante que nuestros clientes tengan la
+                seguridad y tranquilidad de que nuestro servicio es oportuno,
+                ético y profesional. Este mismo servicio que nos ha
+                caracterizado hasta ahora, lo proporcionamos al atender
+                emergencias las 24 horas.
+              </Text>
+              <Phone />
+            </VStack>
+          )}
+        </Box>
       </Container>
       <LargeWrapper>
         <Cards>
@@ -94,7 +91,7 @@ const AboutPage: NextPage = () => {
             py={["3", "3", "0"]}
             boxShadow="dark-lg"
             mr={["0", "0", "3"]}
-            mt={["4", "4", "0"]}
+            mt="4"
             padding={[1, 1, 2]}
             rounded="lg"
           >
@@ -120,7 +117,7 @@ const AboutPage: NextPage = () => {
             h="full"
             py={["3", "3", "0"]}
             boxShadow="dark-lg"
-            mt={["4", "4", "0"]}
+            mt="4"
             padding={[1, 1, 2]}
             rounded="lg"
           >
@@ -141,8 +138,6 @@ const AboutPage: NextPage = () => {
             </NextLink>
           </Box>
         </Cards>
-      </LargeWrapper>
-      <Container maxWidth="container.xl" padding={[0, 0, 10]}>
         <Flex padding={[1, 1, 0]}>
           <Box
             w="full"
@@ -151,7 +146,7 @@ const AboutPage: NextPage = () => {
             py={["3", "3", "0"]}
             boxShadow="dark-lg"
             rounded="lg"
-            mt={["5", "5", "0"]}
+            mt="4"
             padding={[1, 1, 2]}
           >
             <Text variant="main_card_title">Nuestro compromiso</Text>
@@ -160,7 +155,7 @@ const AboutPage: NextPage = () => {
             </Text>
           </Box>
         </Flex>
-      </Container>
+      </LargeWrapper>
     </>
   );
 };

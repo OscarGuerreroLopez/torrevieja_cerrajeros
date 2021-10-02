@@ -6,10 +6,9 @@ interface AuxProps {
 
 export const Cards: React.FC<AuxProps> = ({ children }): JSX.Element => {
   return (
-    <Flex h="auto" direction="column" alignItems="center" py={[0, 0, 5]}>
+    <Flex h="auto" direction="column" alignItems="center">
       <Flex
         h="auto"
-        w={["100%", "100%", "100%"]}
         direction={{ base: "column", md: "row" }}
         padding={[1, 1, 2]}
       >

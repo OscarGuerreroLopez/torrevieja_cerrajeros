@@ -23,7 +23,7 @@ export const TextStyles = {
       }
     }),
     main_card_title: (props: Dict<unknown> | StyleFunctionProps): unknown => ({
-      fontSize: [17, 22, 23, 32],
+      fontSize: [17, 22, 21, 28, 32],
       fontFamily: "Ultra",
       color: mode(whiten("gray.700", 20), darken("white", 20))(props),
       _hover: {

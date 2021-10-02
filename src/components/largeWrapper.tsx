@@ -14,11 +14,7 @@ export const LargeWrapper: React.FC<AuxProps> = ({ children }): JSX.Element => {
   });
 
   if (isLarge === "large") {
-    return (
-      <Container maxWidth="container.xl" padding={[0, 0, 6]}>
-        {children}
-      </Container>
-    );
+    return <Container maxWidth="container.xl">{children}</Container>;
   }
 
   return <> {children}</>;

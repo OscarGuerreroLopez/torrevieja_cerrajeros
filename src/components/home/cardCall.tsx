@@ -11,7 +11,7 @@ export const CardCall = (): JSX.Element => {
       h="full"
       align="center"
       boxShadow="dark-lg"
-      mt={["3", "3", "0"]}
+      mt="3"
       padding={[1, 1, 2]}
       rounded="lg"
     >

@@ -4,7 +4,7 @@ import { BusinessTitle } from "../../constants";
 export const Brands = (): JSX.Element => {
   return (
     <>
-      <Flex direction="column" bg="blue.500" pb="10">
+      <Flex direction="column" bg="blue.500" pb="10" mt="3">
         <VStack alignItems="center" w="full" h="auto">
           <Text variant="main_center_blue" align="left">
             Solo primeras marcas
