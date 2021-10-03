@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { Box, Image, Text } from "@chakra-ui/react";
+import { Loader } from "../src/components/loader";
+import { MainCard } from "../src/components/mainCard";
+
+import { BusinessTitle, Telephone } from "../src/constants";
 
 const reRouting = {
   "/locations/": "/locations",
   "/services/": "/services"
 };
-
-import { MainCard } from "../src/components/mainCard";
-
-import { BusinessTitle, Telephone } from "../src/constants";
 
 const NotFoundPage: NextPage = () => {
   const [load, setLoad] = useState(false);
@@ -61,6 +61,8 @@ const NotFoundPage: NextPage = () => {
           </MainCard>
         </>
       )}
+
+      {!load && <Loader />}
     </>
   );
 };
