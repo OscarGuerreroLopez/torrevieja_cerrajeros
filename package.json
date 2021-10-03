@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
+    "devServer": "npm run build && npm run export && http-server ./out",
     "build": "next build",
     "start": "next start",
     "export": "next export",
