@@ -35,7 +35,7 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
         </title>
         <meta
           name="description"
-          content={`Cerrajeros ${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
+          content={`${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
