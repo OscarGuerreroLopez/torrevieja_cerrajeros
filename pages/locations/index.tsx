@@ -31,11 +31,11 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
     <>
       <Head>
         <title>
-          {`Servicios cerrajeria Alicante. 24H Telf: ${Telephone}. Vega Baja`}{" "}
+          {`Cerrajeros ${BusinessTitle}. 24 Horas. Telf: ${Telephone}`}
         </title>
         <meta
           name="description"
-          content="Servicios cerrajeria en Alicante, Vega Baja, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras"
+          content={`Cerrajeros ${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />

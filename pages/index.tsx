@@ -23,7 +23,7 @@ const IndexPage: NextPage = () => {
         <title>{`${BusinessTitle} 24H. Telf: ${Telephone}`}</title>
         <meta
           name="description"
-          content={`${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
+          content={`${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras. Cerrajeria`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
