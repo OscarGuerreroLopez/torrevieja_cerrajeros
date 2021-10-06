@@ -9,7 +9,11 @@ import {
   Text
 } from "@chakra-ui/react";
 
-import { BusinessTitle, Telephone } from "../../src/constants";
+import {
+  BusinessTitle,
+  BusinessMainTitle,
+  Telephone
+} from "../../src/constants";
 import { Phone } from "../../src/components/phone";
 import { Brands } from "../../src/components/home";
 import { MainCard } from "../../src/components/mainCard";
@@ -21,10 +25,10 @@ export const ContactPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{`${BusinessTitle} 24H. Telf: ${Telephone} . Vega Baja`}</title>
+        <title>{`Los Mejores ${BusinessMainTitle} 24H. Telf: ${Telephone}`}</title>
         <meta
           name="description"
-          content="Servicios cerrajeria, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras"
+          content={`Los Mejores ${BusinessMainTitle}. Expertos al Mejor Precio en Aperturas, Automatismos, Cierres metálicos, Persianas, Puertas de garaje, Sustitución y reparación de cerraduras. Cerrajería.`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />

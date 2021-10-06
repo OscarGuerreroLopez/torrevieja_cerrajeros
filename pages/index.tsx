@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 import Head from "next/head";
 
-import { BusinessTitle, Telephone } from "../src/constants";
+import { BusinessMainTitle, Telephone } from "../src/constants";
 
 import {
   CardIntro,
@@ -20,10 +20,10 @@ const IndexPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{`${BusinessTitle} 24H. Telf: ${Telephone}`}</title>
+        <title>{`Los Mejores ${BusinessMainTitle} 24H. Telf: ${Telephone}`}</title>
         <meta
           name="description"
-          content={`${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras. Cerrajeria`}
+          content={`Los Mejores ${BusinessMainTitle}. Expertos al Mejor Precio en Aperturas, Automatismos, Cierres metálicos, Persianas, Puertas de garaje, Sustitución y reparación de cerraduras. Cerrajería.`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />

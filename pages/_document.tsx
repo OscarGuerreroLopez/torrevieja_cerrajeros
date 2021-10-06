@@ -14,6 +14,16 @@ export default class CustomDocument extends Document {
               })(window,document,'script','dataLayer','GTM-MQ4B9H8');`
             }}
           ></script>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-209489251-1"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date()); gtag('config', 'UA-209489251-1');`
+            }}
+          ></script>
         </Head>
         <body>
           <noscript

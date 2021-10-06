@@ -22,11 +22,11 @@ const MunicipioPage: NextPage<{ municipio: string }> = (props) => {
       <Head>
         <title>
           {" "}
-          {`Cerrajeros ${props.municipio}. 24 Horas. Telf: ${Telephone}`}
+          {`Los Mejores Cerrajeros de ${props.municipio} 24H. Telf:  ${Telephone}`}
         </title>
         <meta
           name="description"
-          content={`Cerrajeros en ${props.municipio}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
+          content={`Los Mejores Cerrajeros de ${props.municipio}. Expertos al Mejor Precio en Aperturas, Automatismos, Cierres metálicos, Persianas, Puertas de garaje, Sustitución y reparación de cerraduras. Cerrajería.`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />

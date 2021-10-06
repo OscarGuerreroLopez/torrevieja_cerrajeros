@@ -1,4 +1,5 @@
 export const BusinessTitle = "Cerrajeros Torrevieja";
+export const BusinessMainTitle = "Cerrajeros de Torrevieja";
 export const Location = "Torrevieja";
 export const LocationServices = "Torrevieja y alrededores";
 export const Telephone = "635411740";

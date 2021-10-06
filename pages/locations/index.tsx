@@ -15,6 +15,7 @@ import municipioList from "../../lib/municipios.json";
 import NextLink from "next/link";
 import {
   BusinessTitle,
+  BusinessMainTitle,
   LocationServices,
   Telephone
 } from "../../src/constants";
@@ -30,12 +31,10 @@ export const LocationsPage: NextPage<{ municipios: string[] }> = (props) => {
   return (
     <>
       <Head>
-        <title>
-          {`Cerrajeros ${BusinessTitle}. 24 Horas. Telf: ${Telephone}`}
-        </title>
+        <title>{`Los Mejores ${BusinessMainTitle} 24H. Telf: ${Telephone}`}</title>
         <meta
           name="description"
-          content={`${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
+          content={`Los Mejores ${BusinessMainTitle}. Expertos al Mejor Precio en Aperturas, Automatismos, Cierres metálicos, Persianas, Puertas de garaje, Sustitución y reparación de cerraduras. Cerrajería.`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />

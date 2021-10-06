@@ -16,7 +16,12 @@ import { Phone } from "../src/components/phone";
 import { MainCard } from "../src/components/mainCard";
 import { LargeWrapper } from "../src/components/largeWrapper";
 
-import { BusinessTitle, LocationServices, Telephone } from "../src/constants";
+import {
+  BusinessTitle,
+  BusinessMainTitle,
+  LocationServices,
+  Telephone
+} from "../src/constants";
 import React from "react";
 
 const ContactPage: NextPage = () => {
@@ -24,10 +29,10 @@ const ContactPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{`${BusinessTitle} 24H. Telf: ${Telephone}`}</title>
+        <title>{`Los Mejores ${BusinessMainTitle} 24H. Telf: ${Telephone}`}</title>
         <meta
           name="description"
-          content={`Cerrajeros ${BusinessTitle}, aperturas, automatismos, cierres metálicos, persianas, puertas de garaje, sustitución y reparación de cerraduras`}
+          content={`Los Mejores ${BusinessMainTitle}. Expertos al Mejor Precio en Aperturas, Automatismos, Cierres metálicos, Persianas, Puertas de garaje, Sustitución y reparación de cerraduras. Cerrajería.`}
         />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />

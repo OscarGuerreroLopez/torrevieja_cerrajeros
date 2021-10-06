@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 
-import { BusinessTitle, Telephone } from "../src/constants";
+import { BusinessTitle, BusinessMainTitle, Telephone } from "../src/constants";
 import { Phone } from "../src/components/phone";
 import { Cards } from "../src/components/cards";
 import { LargeWrapper } from "../src/components/largeWrapper";
@@ -23,8 +23,11 @@ const AboutPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{`${BusinessTitle} 24H. Telf: ${Telephone}`}</title>
-        <meta name="description" content={BusinessTitle} />
+        <title>{`Los Mejores ${BusinessMainTitle} 24H. Telf: ${Telephone}`}</title>
+        <meta
+          name="description"
+          content={`Los Mejores ${BusinessMainTitle}. Expertos al Mejor Precio en Aperturas, Automatismos, Cierres metálicos, Persianas, Puertas de garaje, Sustitución y reparación de cerraduras. Cerrajería.`}
+        />
         <meta name="robots" content="index, follow" />
         <meta charSet="UTF-8" />
       </Head>
